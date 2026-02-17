@@ -30,21 +30,26 @@
 
 \section{DEFINITIONS}
 
-\subsection{DEFINITION OF A SUM OF $x \in \mathbb{R}$}
+\subsection{DEFINITION OF A SUM OF $S(t) \in \mathbb{R}$}
 We define:
 \begin{equation}
-    S(x) \coloneqq \sum_{k=1}^{e}\frac{k \log(x)}{e}\cdot ke, \quad \int_{a}^{b}S(t)dt
+    S(t) \coloneqq \sum_{k=1}^{e}\frac{k \log(t)}{e}\cdot ke, \quad \int_{a}^{b}S(t)dt
 \end{equation}
-Where $\forall x \in \mathbb{R}, x > 1$.
+Where $\forall t \in \mathbb{R}, t > 1$.
 
-\subsection{DEFINITION OF A SUM OF $(x \cdot e), \quad ((x+1)\cdot e) \in \mathbb{R}$}
+\subsection{DEFINITION OF A SUM OF $W(t) \in \mathbb{R}$}
 We define:
 \begin{equation}
-    W(x) \coloneqq S(x \cdot e)\cdot S((x+1)\cdot e) +C, \quad \forall C \in \mathbb{Z}, \quad C > 0
+    W(t) \coloneqq S(t \cdot e)\cdot S((t+1)\cdot e) +C, \quad \forall C \in \mathbb{Z}, \quad C > 0
 \end{equation}
-Where $\forall x \in \mathbb{R}, x > 0$.
+Where $\forall t \in \mathbb{R}, t > 0$.
+
+\subsection{DEFINITION OF THE NORM $S_{sum} \in \mathbb{R}$}
+
+We define:
+\begin{equation}
+    N_{sum} \coloneqq \sqrt{S(t)^2_{n}} \quad \forall t \in \mathbb{R}
+\end{equation}
+If and only if $t > 1, \quad n_{min} < n < n_{max}$.
 
 \end{document}
-
-
-
