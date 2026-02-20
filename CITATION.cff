@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Amlal's Papers Notes.
+message: Amlal's working group papers.
+type: collection
+authors:
+  - given-names: Amlal
+    family-names: El Mahrouss
+    email: amlal@nekernel.org
+identifiers:
+  - type: url
+    value: 'https://nekernel.org'
+    description: NeKernel.org
+repository-code: 'https://github.com/amlel-el-mahrouss/paper-notes'
+url: 'https://nekernel.org'
+abstract: >-
+  Working Group Papers of Amlal El Mahrouss.
+keywords:
+  - cs
+  - systems
+  - os
+  - pl
+  - math
+license: Apache-2.0
