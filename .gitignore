@@ -23,3 +23,5 @@ Makefile~
 proofs/
 .vscode
 .claude
+.venv
+__pycache__

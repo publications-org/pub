@@ -193,6 +193,15 @@ Let a set of $\operatorname{AAlgorithm(x)}$ be elements of an `A-Code' alphabet.
 After laying the two theorems, we will use the following Python script:
 
 \begin{lstlisting}
+import pytoklib
+
+if __name__ == '__main__':
+    with open('datasets/jp.txt') as f: 
+        s = f.read()
+        res = pytoklib.ntoken.ntoken(s, pytoklib.sa1)
+        for vi in res:
+            print(vi[0])
+            print(vi[1])
 
 \end{lstlisting}
 
