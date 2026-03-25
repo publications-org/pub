@@ -2,10 +2,17 @@
 
 import math
 
-def agroup(values):
+ENCODING_AGROUP = "UTF-8"
+
+def agroup(lst, lim):
+    if (len(lst) == 0):
+        return []
+    
     v = []
 
-    for vi in values:
-        v.append([[str(vi)], list(vi.encode("utf-8"))])
+    for vi in range(lim):
+        v.append([[str(lst[vi])], ENCODING_AGROUP])
 
     return v
+
+

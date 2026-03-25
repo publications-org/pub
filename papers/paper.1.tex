@@ -174,10 +174,10 @@ LLMs have for a long-time struggled with multi-width characters in their transfo
 We shall introduce the following algorithm of A-Indices.
 Let the following algorithm for indices elements in an A-Base:
 \begin{equation}
-    \operatorname{AGroup}(x^{n-1}+x^{n-2}+x^{n})+\operatorname{AGroup}(x^{n+2}+x^{n+1})
+    \operatorname{AAlgorithm}(C) = \operatorname{AGroup}_{low}(C_{low})+\operatorname{AGroup}_{high}(C_{high})
 \end{equation}
 \begin{equation}
-    \forall x \in \mathbb{R}, n > 2, x > 1, \forall n \in \mathbb{Z}
+    \forall x \in \mathbb{R}, x > 1
 \end{equation}
 Where $x$ is the A-Base index. An $\operatorname{AAlgorithm(0)}$ is an invalid index. Each element $x$ shall be divisible by a power of two. An $\operatorname{AAlgorithm}$ is an algorithm used to encode an index to `A-Code'.
 
@@ -187,22 +187,30 @@ Where $x$ is the A-Base index. An $\operatorname{AAlgorithm(0)}$ is an invalid i
 Let a set of $\operatorname{AAlgorithm(x)}$ be elements of an `A-Code' alphabet. From a start index to an end index. An $\operatorname{AAlgorithm(x)}$ should be non-zero and continuous in the `A-Code' set. 
 
 %% ============================================================
-\section{Applications: The CJK characters}
+\section{Applications: Hiragana Characters}
 \label{sec:acode-conclusion}
 
 After laying the two theorems, we will use the following Python script:
 
 \begin{lstlisting}
-import pytoklib
-
 if __name__ == '__main__':
-    with open('datasets/jp.txt') as f: 
+    print("prompter.py <lang> <instructions>")
+    
+    with open(sys.argv[1]) as f: 
         s = f.read()
+        s = s[s.find('---'):]
         res = pytoklib.ntoken.ntoken(s, pytoklib.sa1)
         for vi in res:
             print(vi[0])
             print(vi[1])
-
+        
+        with open(sys.argv[2]) as f2:
+            prompt = f2.read()
+            final = res
+            final += prompt
+            print(final)
+            with open("output.txt", "w") as f3:
+                f3.write(str(final))
 \end{lstlisting}
 
 %% ============================================================
