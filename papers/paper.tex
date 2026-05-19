@@ -1,0 +1,266 @@
+%% ============================================================
+%% Academic Journal Paper Template
+%% Compatible with: IEEE, ACM, Elsevier, Springer conventions
+%% ============================================================
+
+\documentclass[10pt, twocolumn]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}           % Microtypographic refinements
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}                  % Bold math symbols
+\usepackage{filecontents}
+
+\begin{filecontents}{byzantine-generals-problem}
+@article{lamport1982the,
+author = {Lamport, Leslie and Shostak, Robert and Pease, Marshall},
+title = {The Byzantine Generals Problem},
+year = {1982},
+month = {July}
+\end{filecontents}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}            % Professional table rules
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+\usepackage{arrayjobx}
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{lipsum}              % Lorem ipsum filler — remove in production
+\usepackage{enumitem}
+\usepackage{siunitx}             % SI units: \SI{3.14}{\mega\hertz}
+\usepackage{cleveref}            % Smart cross-references: \cref{fig:foo}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{State Replication of Computer Algorithmic Data.}%
+}
+
+\author{%
+  \textbf{A. E. Mahrouss}$^{1}$\thanks{Corresponding author. Email: aelmahrouss@acm.org}
+  \\aelmahrouss@acm.org\\[0.4em]
+}
+
+\date{%
+  \small \today
+}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
+%% ============================================================
+
+\section{Abstract}
+
+In July of 1982, an article was published under the ACM' Transaction on Programming Languages and Systems journal. It covered a concrete problem in distributed computing, the byzantine generals argues about what source of single of truth to trust when dealing with multiple nodes. Considering now as of \today, the amount of data flowing through our modern digital infrastructure and per [4], and [2] implications throughout the industry, the paper analyses what's there and what can be done further to solve the failure modes for algorithmic data cases.
+
+\section{State Machine Replication per [2], and Algorithmic Data.}
+
+Considering the current state of the financial market, per [2] mentioning cryptocurrencies as a concrete way of thinking about permissioned (and permissionsless) algorithms.\\
+This short introduction to this paper leads us to the following question about the data itself. Per [4], and [2], how can guarantee a single source of truth for an exact algorithm $ServerCall(...)$ running in $n$ machines? The following code is a pseudo-code of an algorithm $ServerCall(...)$ taking $p$ parameters and replicated throughout $n$ machines:
+
+\begin{algorithm}
+\caption{ServerCall(...)}
+\begin{algorithmic}[1]
+\Procedure{ServerCall}{$p_1, p_2, \dots, p_n$}
+    \State $result \leftarrow \text{NULL}$
+    \State $response \leftarrow \textbf{Await } \text{LongDistanceRx}(p_1, p_2, \dots, p_n)$
+    \If{$response = \text{TIMEOUT}$}
+        \State \textbf{return} $\text{UNRESPONSIVE\_NODE}$
+    \ElsIf{$response = \text{NETWORK\_FAILURE}$}
+        \State \textbf{return} $\text{NETWORK\_FAILURE}$
+    \Else
+        \State $result \leftarrow response.value$
+        \State \textbf{return} $result$
+    \EndIf
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}
+\caption{Client(...)}
+\begin{algorithmic}[1]
+\Procedure{Client}{$p_1, p_2, \dots, p_n$}
+    \State $retries \leftarrow 0$
+    \While{\textbf{true}}
+        \State $response \leftarrow \textbf{Await } \text{ServerCall}(p_1, p_2, \dots, p_n)$
+        \If{$response \neq \text{UNRESPONSIVE\_NODE}$}
+            \State \textbf{return} $response$
+        \ElsIf{$retries \geq \text{MAX\_RETRIES}$}
+            \State \textbf{return} $\text{FAILURE}$
+        \Else
+            \State $retries \leftarrow retries + 1$
+        \EndIf
+    \EndWhile
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\section{A List of Definitions}
+
+\subsection{The Problem Sets}
+
+Defining three distinct failures: Network, Unresponsive, and Malicious node. These scenarios then raises the following reasoning: Defining the 'same value' as the intended value 'byte-per-byte' OR as the same logical result. Another way to define it is the expected value to return per [4].
+For $ServerCall(...)$ to return the exact same value for each computer in a set, how do we guarantee a solution that returns exactly the 'same value'? In other words, when a specific failure point is met which solutions is present to prevent OR correct the network? We will restrict this problem to the algorithm itself, not the variables that are being fed to it. Approaching it per algorithm as a plausible hypothesis could help mitigate and correct nodes.
+
+\subsection{Same-Value Definition}
+
+Defining Same-Value as the following: $S_{v}(p_{0}, ..., p_{n}) \equiv{} S_{byte\_per\_byte}(p_{0}, ..., p_{n}) \vee S_{equiv\_result}(p_{0}, ..., p_{n})$
+
+\subsubsection{Same-Value Conditions}
+
+The values from $S_{v}\equiv{}(p_{0}, ..., p_{n})$ shall yield a non-trivial, greater than two value in the sets of $\mathbb{N}$.
+
+\subsection{Questions To Raise}
+
+In simpler terms, what are the guarantees that every computation of algorithm for each of those nodes return the same value? One hypothesis can be formed: We consider algorithm $a$ of a computer $b$, which may be connected with a node of computers $c$.
+We restrict ourselves to a simple network of nodes named $n$, We now consider a problem: Constructing a set of nodes $S_{p_{1}}$ which may be non-null, restricting ourselves to the simple following architecture: $S_{n_{1}} \wedge S_{n_{2}}$. In what cases we can define such relations reliably for an algorithm $a$ to yield the same result between two nodes $d$ and $e$ inside the same set? 
+
+\subsection{The Question's Scope}
+
+We restrict ourselves in a set $S_{n_{1}}$ that is always assumed to valid non-null elements on a lifetime $L_{n}$ and complexity $O(k)$, where $k$ is non-null and greater OR equal than one.
+
+\section{Hypotheses}
+
+Following the question's scope it is fairly important to impose an hypothesis before imposing the requirements. A way to solve 'Algorithmic Data' would be using 'Per-Node-Data'.
+
+\subsection{Using Raft as a potential solution}
+
+Under the Raft consensus algorithm, a leader node is selected to govern 'Per-Node-Data' and own 'Remote Procedure Calls'. 
+
+\subsection{Using 'Remote Procedure Calls' per [1]}
+
+We may consider 'Remote Procedures Calls' or a function that is called remotely from another node as a plausible solution. That would require node one to copy the results to node two in a reliable way.
+
+\subsection{Concept of a 'Per-Node-Data' per [1]}
+
+Considering a single data structure on a master node, this master node' purpose is to hold and track each result as a single source of truth for each nodes that may need to use that data. This may be applicable for smart contracts, daisy-chaining, and production distributed-systems that rely heavily on high-throughput data.
+
+\section{Requirements}
+
+Imposing the requirements for the above:\\
+- Let k \textgreater 1 be the number of nodes. The algorithm runs in $O(k)$ time, meaning execution time scales linearly with the number of nodes.\\
+- We assume k \textgreater 2, i.e. the network consists of at least two nodes, as a single-node case is trivial\\
+- The return value of ServerCall(...) is assumed to belong to $\mathbb{N}$ (the natural numbers, i.e. non-negative integers), excluding error codes.
+
+\section{Conclusion and Final Words}
+
+\subsection{Conclusion}
+
+Ut est, this would open a discussion to find potential solutions for distribution of computer algorithmic data.
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{byzantine-generals-problem, acm_1008328.1008329, acm_2080.357392, nist_paper, raft}
+
+\end{document}
