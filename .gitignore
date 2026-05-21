@@ -27,3 +27,5 @@ proofs/
 __pycache__
 output.txt
 output_en.txt
+*.bbl
+*.blg
