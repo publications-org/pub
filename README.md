@@ -1,12 +1,12 @@
-# Papers and Slides.
+# Amlal's Notebook
 
-## Abstract:
+## Abstract
 
 These are notes written by I (Amlal El Mahrouss) for toolboxing purposes.
 
 Feel free to cite me when using them.
 
-## Links:
+## Links
 
 The following paper are published there:
 
