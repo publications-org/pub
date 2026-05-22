@@ -6,50 +6,175 @@
 \usepackage{listings}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{xcolor}
-\usepackage{hyperref}
 \usepackage{mathtools}
-\usepackage[margin=0.5in,top=1in,bottom=1in]{geometry}
 
-\title{Second Notes for Several Formulas.}
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}           % Microtypographic refinements
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+  top=1in, bottom=1in,
+  left=0.75in, right=0.75in,
+  columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{bm}                  % Bold math symbols
+\usepackage{filecontents}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}            % Professional table rules
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+  backgroundcolor=\color{gray!8},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{green!50!black},
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{orange!70!black},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  numbersep=5pt,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray!40},
+  tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+\usepackage{arrayjobx}
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{lipsum}              % Lorem ipsum filler — remove in production
+\usepackage{enumitem}
+\usepackage{siunitx}             % SI units: \SI{3.14}{\mega\hertz}
+\usepackage{cleveref}            % Smart cross-references: \cref{fig:foo}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  format=hang,
+  justification=justified
+}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\title{On Second Notes for Several Formulas.}
 \author{Amlal El Mahrouss\\\texttt{amlal@nekernel.org}}
 \date{February 18, 2026}
 
 \begin{document}
 
+\twocolumn[{%
+  \maketitle
+  \vspace{-0.5em}
+  \vspace{0.8em}
+  \rule{\linewidth}{0.4pt}
+  \vspace{1em}
+}]
+
 \maketitle
 
-\begin{center}
-	\rule[0.01cm]{17cm}{0.01cm}
-\end{center}
+\section{Abstract}
+The note covers several formulas that have been written down on February 17, 2026, for reusability purposes.
 
-\begin{abstract}
-\begin{center}
-    The paper covers several formulas that I've written down the February of 17, 2026, for reusability purposes.
-\end{center}
-\end{abstract}
-
-\section{DEFINITIONS}
-
-We assume these definitions are valid within their conditions:
-
-\subsection{DEFINITION OF $C \in \mathbb{R}$:}
+\section{Definitions}
+Assuming, these definitions are valid:
+\subsection{Definition of $C \in \mathbb{R}$:}
 We define that for $C(n, p)$:
 \begin{equation}
 C(n, p) \coloneq \sum_{k=1}^{n} \sum_{d=1}^{p} I_{1} (k \cdot d) \in \mathbb{R}
 \end{equation}
-Where $p > S(x) > n$. If and only if $x \geq 0$.
+Where $p > S(x) > n$. If and only if $x \geq 0$. Where $S(x)$ exists in $C(n ,p)$.
 
-\subsection{DEFINITION OF $I_{1} \in \mathbb{C}$:}
+\subsection{Definition of $I_{1} \in \mathbb{C}$:}
 We define that for $I_{1}(t)$:
 \begin{equation}
 I_{1}(t) \coloneq \oint \frac{|Log(t\cdot z)|}{t}dz, \quad \forall z \in \mathbb{R}, \quad t > 0
 \end{equation}
-Where $Log$ is the Principal Complex Logarithm of: $t \cdot z$.
+Where $Log$ is the Principal Complex Logarithm of: $t \cdot z$, and $z \in \mathbb{C}$.
 
-\section{INTRODUCTION}
+\section{Theorems}
 
-The paper will develop the two formulas in application to common theorems in advanced analysis. First we should define the context of which the formulas will be applied to?
+Stating the following theorems per [1.1], and [1.2] definitions:
 
-\subsection{THEOREM DEFINITIONS}
+\subsection{Theorem One:} 
+
+$C(n, p) \in \mathbb{R}$ is a real number for all $n, p \in \mathbb{N}$ such that $p > S(x) > n$ and $x \geq 0$.
+
+\subsection{Theorem Two:} 
+
+$I_{1}(t) \in \mathbb{C}$ is a complex number for all $t > 0$ and $t \in \mathbb{C}$.
+
+\section{Conclusion}
+
+The goal of this note was to establish the definitions of $C(n, p)$ and $I_{1}(t)$, and to state the theorems that follow from these definitions. The properties of these functions can be further explored in future work.
+
+\nocite{*}
+
+\bibliographystyle{acm}
 
 \end{document}
