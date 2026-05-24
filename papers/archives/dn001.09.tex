@@ -142,36 +142,41 @@
 The note covers several formulas that have been written down on February 17, 2026, for reusability purposes.
 
 \section{Definitions}
-Assuming, these definitions are valid:
-\subsection{Definition of $C \in \mathbb{R}$:}
-We define that for $C(n, p)$:
+Assuming $n > 0$, $p > 0$:
+\begin{theorem}
+There exists for $C(n, p)$:
 \begin{equation}
 C(n, p) \coloneq \sum_{k=1}^{n} \sum_{d=1}^{p} I_{1} (k \cdot d) \in \mathbb{R}
 \end{equation}
 Where $p > S(x) > n$. If and only if $x \geq 0$. Where $S(x)$ exists in $C(n ,p)$.
+\end{theorem}
 
-\subsection{Definition of $I_{1} \in \mathbb{C}$:}
-We define that for $I_{1}(t)$:
+\begin{theorem}
+There exists for $I_{1}(t)$:
 \begin{equation}
-I_{1}(t) \coloneq \oint \frac{|Log(t\cdot z)|}{t}dz, \quad \forall z \in \mathbb{R}, \quad t > 0
+I_{1}(t) \coloneq \int_{C}^{\infty} \frac{|Log(t \cdot z)|}{t}dz, \quad \forall z \in \mathbb{R}, \quad t > 0
 \end{equation}
 s.t. as an illustration, we can define $t$ as:
 \begin{equation}
 t(s)=\sum_{n=1}^{l} \frac{1}{n^{s}}
 \end{equation}
 Where $l$ is a positive integer approaching $\infty$, $z$ is constant equal to 1 and $Log$ is the Principal Complex Logarithm of: $t \cdot z$, and $z \in \mathbb{C}$.
+\end{theorem}
 
 \section{Theorems}
 
 Stating the following theorems per [1.1], and [1.2] definitions:
 
-\subsection{Theorem One:} 
+\begin{lemma}
+There exists $x \in \mathbb{R}$, there exists a value of $t$ such that $t \in \mathbb{C}$.
+\end{lemma}
 
+\begin{theorem}
 $C(n, p) \in \mathbb{R}$ is a real number for all $n, p \in \mathbb{N}$ such that $p > S(x) > n$ and $x \geq 0$.
-
-\subsection{Theorem Two:} 
-
+\end{theorem}
+\begin{theorem}
 $I_{1}(t) \in \mathbb{C}$ is a complex number for all $t > 0$ and $t \in \mathbb{C}$.
+\end{theorem}
 
 \section{Conclusion}
 
