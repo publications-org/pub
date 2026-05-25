@@ -4,6 +4,20 @@
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{textcomp}
+\usepackage{amsthm}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
 \title{P-03}
 \author{A. E. Mahrouss\\amlal@nekernel.org}
@@ -16,9 +30,9 @@
 
 The document illustrates a conjecture written down for note-writing purposes.
 
-\section{Conjectures}
+\section{Theorems}
 
-\subsection{Conjecture One}
+\begin{theorem}
 For all returning elements in $F(w)$:
 \begin{equation}
     F(w) = \sum_{i=1}^{n} w_i
@@ -28,5 +42,6 @@ s.t.:
     w_{i}(n, m) = \sum_{j=n}^{m} w_{(i-1)-j}, \space \forall i > (n+2), \in \mathbb{N}
 \end{equation}
 for all $n, m \in \mathbb{N}$ and $n < m$.
+\end{theorem}
 
 \end{document}
