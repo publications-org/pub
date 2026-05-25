@@ -1,9 +1,25 @@
-\documentclass{article}
+
+\documentclass[10pt, twocolumn]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsfonts}
 \usepackage{textcomp}
+\usepackage{amsthm}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
 
 \title{P-02}
 \author{A. E. Mahrouss\\amlal@nekernel.org}
@@ -14,34 +30,36 @@
 
 \section{Abstract}
 
-The document illustrates two conjectures written down for note-writing purposes.
+The document illustrates two theorems written down for note-writing purposes.
 
-\section{Conjectures}
-The two following conjectures are heavily restrained to certain conditions per written in their respective section.
+\section{Introduction and Concepts}
 
-\subsection{Conjecture One}
-For all elements in a set of P, note that:
+
+\section{Theorems and Proofs}
+\begin{theorem}
+There exists $\forall x \in \mathbb{P}$:
 \begin{equation}
     P_0 < P_{n-1} \xrightarrow{} (x) < (x+1)
 \end{equation}
-s.t.:
+s.t.
 \begin{equation}
-    \{ x, \space \cdots, \space (x+p) \} \in P
+    \{ x, \space \cdots, \space (x+p) \} \in \mathbb{P}
 \end{equation}
-for all: $x \in \mathbb{R}$ and $x > 0$, and $x$ belongs to the set of prime numbers.
-\subsection{Conjecture Two}
-Assuming that $F(t)$ is defined in a interval $I$, note that:
+\end{theorem}
+
+\begin{theorem}
+There exists $F(t)$ in an interval $I$:
 \begin{equation}
     F(t)= \int_{p}^{n} G(x) dt
 \end{equation}
-s.t. $G(x)$ is always in $F(t)$, granted that $t$ is defined in the integral and $t$ belongs to the set of reals. s.t.:
 \begin{equation}
     \forall G(x), \space t \in \mathbb{R}, \exists \space G(x) \in \mathbb{P}
 \end{equation}
+\end{theorem}
 
 \nocite{*}
 
 \bibliographystyle{acm}
-\bibliography{}
+\bibliography{book1}
 
 \end{document}
