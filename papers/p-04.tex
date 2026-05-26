@@ -153,11 +153,18 @@
 
 \section{On Theorems}
 \begin{theorem}
-  There exists a solution to $A$ in $\mathbb{C}$:
+  There exists a solution in $\mathbb{C}$:
   \begin{equation}
-    A = \oint \frac{\ln(\frac{1}{n^s})}{\frac{1}{n^s}}ds
+    \oint \frac{\ln(\frac{1}{n^s})}{\frac{1}{n^s}}ds = -n^{(s^2)}+\frac{n^s}{\ln \left(n\right)}+C
   \end{equation}
-  that simplifies to $\sum_{s=1}^{p} \frac{1}{n^s}$ defined in $\mathbb{R}$.
+  that has the following limit:
+  \begin{equation}
+    \lim _{x\to \infty }\left(-n^{s^2}+\frac{n^s}{\ln \left(n\right)}+C\right)
+  \end{equation}
+  which when derived equals to:
+  \begin{equation}
+    \lim _{x\to \infty }\left(-n^{s^2}+\frac{n^s}{\ln \left(n\right)}+C\right) = \oint \frac{\ln(\frac{1}{n^s})}{\frac{1}{n^s}}ds
+  \end{equation}
 \end{theorem}
 
 \begin{theorem}
@@ -165,6 +172,11 @@
   \begin{equation}
     \lim _{n\:\to \infty }\:\sum_{n=1}^{p} \frac{1}{n^s}
   \end{equation}
+  that is always equal to:
+  \begin{equation}
+    \zeta(p) + \frac{p+n}{p \cdot p^{k+p} + \cdot p^{p}}
+  \end{equation}
+  if, and only if, $p$ has a multiple of $\pi$.
 \end{theorem}
 
 \begin{theorem}
@@ -172,7 +184,14 @@
   \begin{equation}
     \lim _{\left(k-p\right)\to \infty } \frac{(k-p)^{e}}{\ln(k-p)}
   \end{equation}
-  for $(k-p) > 1$
+  for $(k-p) > 1$, which always equals to:
+  \begin{equation}
+    \frac{(k-p)^{e}}{\ln(k-p)}
+  \end{equation}
+  when asserting:
+  \begin{equation}
+    \lim _{\left(k-p\right)\to \infty } \frac{(k-p)^{e}}{\ln(k-p)} = \frac{(k-p)^{e}}{\ln(k-p)}
+  \end{equation}
 \end{theorem}
 \nocite{*}
 
