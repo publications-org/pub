@@ -1,9 +1,12 @@
-%% ============================================================
-%% Academic Journal Paper Template
-%% Compatible with: IEEE, ACM, Elsevier, Springer conventions
-%% ============================================================
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: DN001.08: Notes for Several Formulas.
 
-\documentclass[10pt, twocolumn]{article}
+\documentclass[11pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{mathtools}
 
 %% ---- Core Packages ----------------------------------------
 \usepackage[T1]{fontenc}
@@ -119,27 +122,11 @@
 \fancyhead[R]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-%% ============================================================
-%%  FRONT MATTER
-%% ============================================================
+\title{P-06}
+\author{A. E. Mahrouss\\\texttt{ae@nekernel.org}}
+\date{\today}
 
-\title{%
-  \vspace{-1.5em}%
-  \large\textbf{P-04}%
-}
-
-\author{%
-  \textbf{A. E. Mahrouss}$^{1}$\thanks{Corresponding author. Email: aelmahrouss@acm.org}
-  \\aelmahrouss@acm.org\\[0.4em]
-}
-
-\date{%
-  \small \today
-}
-
-%% ============================================================
 \begin{document}
-%% ============================================================
 
 \twocolumn[{%
   \maketitle
@@ -149,64 +136,14 @@
   \vspace{1em}
 }]
 
-%% ============================================================
+\maketitle
 
 \section{Theorems}
-\begin{theorem}
-  There exists in $\mathbb{R}$ a solution:
-  \begin{equation}
-    h(n, s) \coloneqq \oint \frac{\ln(\frac{1}{n^s})}{\frac{1}{n^s}} \space ds \coloneq -n^s \cdot s+\frac{n^s}{\ln \left(n\right)}+C
-  \end{equation}
-  with the following limit towards $\infty$:
-  \begin{equation}
-    h(n, s) \implies \lim _{x\to \infty } -n^s \cdot s+\frac{n^s}{\ln \left(n\right)}+C
-  \end{equation}
-\end{theorem}
 
 \begin{theorem}
-  There exists in $\mathbb{R}$, for $2 < s < p$:
+  Let $pw$, for $\omega > 0$, $x > 0$, per [1.1], the following holds:
   \begin{equation}
-    z(p) \coloneq \lim _{n\:\to \infty }\:\sum_{n=1}^{p} \frac{1}{^p}
-  \end{equation}
-  s.t.:
-  \begin{equation}
-    z(p) \implies y \pm \frac{1}{p}
-  \end{equation}
-  for $y \in \mathbb{R}$, $y > 0$ when it is the resulting of an integration of $p \in \mathbb{R}$.
-\end{theorem}
-
-\begin{theorem}
-  There exists  in $\mathbb{R}$ the following:
-  \begin{equation}
-    c(p) \coloneq \frac{p!}{\ln \left(p\right)!}
-  \end{equation}
-  thay may be solution that uses $\ln(p)$ for $ p! $ times.
-\end{theorem}
-
-\begin{theorem}
-  Let the following intgeral with the defined values: $z$, $x$, $y$:
-  \begin{equation}
-    \sigma(x, y, z) \coloneq \int \frac{f'(x \cdot y \cdot z)}{f''(x \cdot y \cdot z)} \space dt
-  \end{equation}
-  have for $x, y, z \in \mathbb{R}, \quad L < \sigma(x, y, z) < H$, have solutions that converges towards $H$.
-\end{theorem}
-
-\begin{theorem}
-  There exists a following solution:
-  \begin{equation}
-    \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}+C
-  \end{equation}
-  for a function $f(s) \in \mathbb{R}$ for the following $f(s) > 1$, and $f(s) \to \pi$.
-\end{theorem}
-
-\begin{theorem}
-  Let the product of an integral $\in \mathbb{R}$ with the defined with the following values from $a$, $\dots$, to $z$:
-  \begin{equation}
-    \alpha(a, \dots, z) \coloneq \int \frac{(a, \dots, z)}{(a, \dots, z)!}! \space dx
-  \end{equation}
-  if $(a, \dots, z) > 1 \text{, and } (a, \dots, z) \in \mathbb{R}$ are met, then the limit of $f(a, \dots, z)$ may converge to the following:
-  \begin{equation}
-    \lim_{x} \alpha(a, \dots, z) = C
+    pw(\lambda, \omega, i) = \oint (\frac{i \lambda}{\omega}) \space dx = i(\frac{x \lambda}{\omega}) + C
   \end{equation}
 \end{theorem}
 
