@@ -122,7 +122,7 @@
 \fancyhead[R]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-\title{P-06}
+\title{P-07}
 \author{A. E. Mahrouss\\\texttt{ae@nekernel.org}}
 \date{\today}
 
@@ -138,51 +138,10 @@
 
 \maketitle
 
-\section{Theorems}
+\section{Equations}
 
-\begin{theorem}
-  Let $pw(n, p, a) \in \mathbb{R}$, for $p > 0$, $x > 0$, per [1.1], the following:
-  \begin{equation}
-    pw(n, p, a) = \int (\frac{a(n)}{p}) da
-  \end{equation}
-  holds for: $pw(n, p, a) \in \mathbb{R}$, which evaluates to:
-  \begin{equation}
-    PW(n, p, a) = \frac{n}{p}\cdot \frac{a^2}{2}+C
-  \end{equation}
-  which then becomes:
-  \begin{equation}
-    0 = \frac{\frac{n}{p}\cdot \frac{a^2}{2}+C}{-PW(n, p, a)}
-  \end{equation}
-\end{theorem}
-
-\begin{theorem}
-  Let $\frac{dy}{dx}pw(n, p, a) = v_{n}; \quad v_{n} \in \mathbb{R}$, where $ pw(n, p, a) $ is a rational number. Thus:
-  \begin{equation}
-    v_{n} \in \mathbb{R}; \quad v_{n}\neq 0
-  \end{equation}
-\end{theorem}
-
-\begin{theorem}
-  There exists in $\mathbb{R}$ the following equality:
-  \begin{equation}
-    c \cdot p \coloneq \frac{p!}{\ln \left(p\right)!}
-  \end{equation}
-  The euquation then becomes:
-  \begin{equation}
-    c \coloneq \frac{p!}{p \cdot \ln \left(p\right)!}; \quad p \neq 0
-  \end{equation}
-\end{theorem}
-
-\begin{theorem}
-  There exists an indefinite volume integral of $\frac{p!}{p \cdot \ln \left(p\right)!}$ in $\mathbb{R}$ of the following:
-  \begin{equation}
-    \iiint (\frac{p!}{p \cdot \ln \left(p\right)!} dp \cdot dy \cdot dn )= c_{1} n y + c_{2} n + c_{3} + n y \operatorname{li}(p)
-  \end{equation}
-  Which simplifies to the general indentity depending on the integral types: $\iint, \iiint. \iiiint$:
-  \begin{equation}
-    c_{1} n y + \sum_{n=2}^{n-1} ( c_{n} n ) + c_{n-1} n y \operatorname{li}(p)
-  \end{equation}
-  if and only if the result is an integration of $\iint, \iiint, \iiiint$.
-\end{theorem}
+\begin{equation}
+    \int_C \frac{\log\!\left(\left|\sum_{n=1}^{\infty} \frac{1}{n^s}\right|\right)}{\sum_{n=1}^{\infty} \frac{1}{n^s}} \, d\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}
+\end{equation}
 
 \end{document}
