@@ -2,4 +2,5 @@
 
 ## Abstract
 
-These are notes written by I (Amlal El Mahrouss) for note-taking purposes.
+These are notes written by I (Amlal El Mahrouss)
+
