@@ -183,6 +183,20 @@
     \lim_{x \to \operatorname{e}} \pm \operatorname{eq}(x) = \operatorname{eq}(x)\\
     \frac{ \lim_{x \to \operatorname{e}} \pm \operatorname{eq}(x)}{\operatorname{eq}(x)} = \frac{\operatorname{eq}(x)}{\operatorname{eq}(x)} = \frac{1}{1}
   \end{align*}
+  Therefore:
+  \begin{align*}
+	\operatorname{eq}(x) &= \pm \left(\frac{p+1}{2}\right)^{x}
+  \end{align*}
+  Now assuming a value $K$:
+  \begin{align*}
+\frac{\operatorname{eq}(x)}{\pm \left(\frac{p+1}{2}\right)^{x}} &= \pm K\\
+\int \frac{\operatorname{eq}(x)}{\pm \left(\frac{p+1}{2}\right)^{x}} dx &= \pm K\\
+\frac{\int \frac{\operatorname{eq}(x)}{\pm \left(\frac{p+1}{2}\right)^{x}} dx}{\pm K} &= 0; \pm K \neq 0\\
+  \end{align*}
+  Therefore:
+  \begin{equation}
+  	\frac{\int \frac{\operatorname{eq}(x)}{\pm \left(\frac{p+1}{2}\right)^{x}} dx}{\pm K} < \int \frac{\operatorname{eq}(x)}{\pm \left(\frac{p+1}{2}\right)^{x}} dx < \pm K
+  \end{equation}
 \end{theorem}
 
 \begin{theorem}
@@ -200,19 +214,21 @@
   \end{equation}
   That equals:
   \begin{equation}
-    C = (\sigma(x, y, z))^{2}
+    C = (\pm \sigma(x, y, z))^{2}
   \end{equation}
   For:
   \begin{equation}
-    \frac{C}{\sigma(x, y, z)} = \sigma(x, y, z)
+    \frac{C}{\pm \sigma(x, y, z)} = \pm \sigma(x, y, z)
   \end{equation}
 \end{theorem}
 
 \begin{theorem}
   There exists:
-  \begin{equation}
-    \tau (s) \coloneq \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\pm C
-  \end{equation}
+  \begin{align*}
+    \tau (s) &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\pm C\\
+    \frac{\tau (s)}{\pm C} &= \lim _{s\to \:\pi } -n^s+\frac{n^s}{\ln \left(n\right)}\\
+    \pm \frac{n^s}{\ln \left(n\right)} + \frac{\tau (s)}{\pm C} &= \lim _{s\to \:\pi } -n^s
+  \end{align*}
   If and only If: $\tau (s) \in \mathbb{R}$
 \end{theorem}
 
