@@ -43,12 +43,17 @@
 \begin{theorem}
 For:
 \begin{equation}
-    A(n, p) \coloneq \sum_{n}^{p} M(n p)
+    A(n, p) = \sum_{n}^{p} M(n, p); \quad A(n, p) \in D^{+}
 \end{equation}
+We have:
 \begin{equation}
-    A(n, p) \implies p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)! 
+    A(n, p) = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)! 
 \end{equation}
-For $A(n, p) \neq 0$, the previous identity holds for numbers in $\mathbb{R}$.
+For $A(n, p) \neq 0$. Such that:
+\begin{align*}
+    C &=  \frac{ p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)!}{A(n, p)}\\
+    A(n, p) &< \frac{\operatorname{d}}{\operatorname{dC}} < \frac{ p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+Lp)!}{A(n, p)}
+\end{align*}
 \end{theorem}
 
 \nocite{*}
