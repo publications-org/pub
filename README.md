@@ -1,6 +1,6 @@
 # Amlal's Working Book
 
-[!\[DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20497750.svg)](https://doi.org/10.5281/zenodo.20497750)
+!\[https://doi.org/10.5281/zenodo.20497750](https://doi.org/10.5281/zenodo.20497750)
 
 ## 
 
