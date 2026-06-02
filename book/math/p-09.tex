@@ -99,6 +99,30 @@
 		\end{equation}
 	\end{theorem}
 	
+	\begin{proof}
+		Assuming:
+		\begin{align*}
+			yt &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+			\frac{yt}{\pm T} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm T}.
+		\end{align*}
+		Now in order to continue further, we need to solve:
+		\begin{align*}
+			\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &< x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+			\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} &< x - \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)} > 0;\\
+			\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)} &> x;
+		\end{align*}
+		Therefore. For $x = \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$
+		\begin{align*}
+			\pm T + yt &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)};\\
+			yt &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm T}.
+		\end{align*}
+		Thus. For: $\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.$:
+		\begin{align*}
+			\pm T + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm T} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
+			\frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm T} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm T}; \quad \pm T \neq 0.
+		\end{align*}
+	\end{proof}
+	
 	\nocite{*}
 	
 	\bibliographystyle{acm}
