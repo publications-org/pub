@@ -1,9 +1,12 @@
-%% ============================================================
-%% Academic Journal Paper Template
-%% Compatible with: IEEE, ACM, Elsevier, Springer conventions
-%% ============================================================
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: DN001.08: Notes for Several Formulas.
 
 \documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{xcolor}
+\usepackage{mathtools}
 
 %% ---- Core Packages ----------------------------------------
 \usepackage[T1]{fontenc}
@@ -119,112 +122,31 @@
 \fancyhead[R]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
-%% ============================================================
-%%  FRONT MATTER
-%% ============================================================
-
 \title{%
   \vspace{-1.5em}%
-  \large\textbf{Equations \& Theorems for Mathematics}%
+  \large\textbf{Part Five}%
 }
+\author{A. E. Mahrouss}
+\date{\today}
 
-\author{%
-  \textbf{A. E. Mahrouss}$^{1}$\thanks{Corresponding author. Email: aelmahrouss@acm.org}
-  \\aelmahrouss@acm.org\\[0.4em]
-}
-
-\date{%
-  \small \today
-}
-
-%% ============================================================
 \begin{document}
-%% ============================================================
-
-  \maketitle
-  \vspace{-0.5em}
-  \vspace{0.8em}
-  \rule{\linewidth}{0.4pt}
-  \vspace{1em}
-
-%% ============================================================
-
-\section{Equations \& Definitions}
 
 \begin{definition}
-	Let the following:
+	Let us define the following equations:
 	\begin{align*}
-		E(x) &= \frac{\gamma(x)}{\delta(x) + \lambda(x)}; \quad \gamma(x) \neq 0.
+		\frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!) &= Z'; \quad x \in \mathbb{Z}.
+	\end{align*}
+	That admits the following alternate form:
+	\begin{align*}
+		Z' &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!);\\
+		&= \phi(n^{s}!)(\frac{1}{\tau(n^{s}!)} + \frac{1}{\lambda(n^{s}!)}) + \phi(n^{s}!);\\
+		&= \phi(n^{s}!)(\frac{1}{\tau(n^{s}!)} + \frac{1}{\lambda(n^{s}!)} + 1).
 	\end{align*}
 \end{definition}
-
-\begin{definition}
-	Let the following based on $E(x)$:
-	\begin{align*}
-		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int E(x) dx;\\
-		P' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0;\\
-		P' &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}.
-	\end{align*}
-\end{definition}
-
-\begin{definition}
-	The following based for $x \in \mathbb{N}$:
-	\begin{align*}
-		\prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P(s) \neq 0.
-	\end{align*}
-	Admits a solution in $\mathbb{R}$ of the following:
-	\begin{align*}
-		P'' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx; \quad P'' \neq 0.
-	\end{align*}
-\end{definition}
-
-\begin{definition}
-	Let the following:
-	\begin{align*}
-		L' + \lambda(x)^{2} &= \frac{\gamma(x)}{\delta(x)};\\
-	 	L' + \lambda(x) &= \frac{\gamma(x)}{\delta(x)  \lambda(x) };\\
-	 	L' &= \frac{\gamma(x)}{\delta(x)  \lambda(x) } - \lambda(x); \quad \delta(x)\lambda(x) \neq 0.
-	\end{align*}
-\end{definition}
-
-\begin{definition}
-	We must find a value of $\ln x$ that equals:
-	\begin{align*}
-		&= \frac{\ln x}{\Delta y};\\
-		\Delta y &= \ln x;
-	\end{align*}
-\end{definition}
-
-\begin{definition}
-	We must find $I'$ that equals:
-	\begin{align*}
-		r &= ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+};\\
-		I' &= - r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+};
-	\end{align*}
-\end{definition}
-
-\begin{definition}
-	For all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
-	\begin{align*}
-		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m; \quad r \neq 0; \quad r \in \mathbb{R}{+}.
-	\end{align*}
-	Admits a transecdenctal number.
-\end{definition}
-
-\begin{theorem}
-	The following plots both a real and imiginary part for both:
-	\begin{align*}
-		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7
-	\end{align*}
-	And:
-	\begin{align*}
-		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7.
-	\end{align*}
-\end{theorem}
 
 \nocite{*}
 
 \bibliographystyle{acm}
-\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
+
 
 \end{document}

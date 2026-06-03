@@ -1,9 +1,7 @@
-\documentclass[10pt, twocolumn]{article}
+\documentclass[10pt]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{amsfonts}
-\usepackage{textcomp}
 \usepackage{amsthm}
 \usepackage{mathtools}
 
@@ -20,27 +18,29 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{Introduction \& Preface}
-\author{A. E. Mahrouss\\amlal@nekernel.org}
+\title{%
+  \vspace{-1.5em}%
+  \large\textbf{First Part}%
+}
+
+\author{A. E. Mahrouss}
 \date{\today}
 
 \begin{document}
 
-\twocolumn[{%
-  \maketitle
-  \vspace{-0.5em}
-  \vspace{0.8em}
-  \rule{\linewidth}{0.4pt}
-  \vspace{1em}
-}]
-
-
-\section{Preface}
-
-The book has received recent restructuring including now categorized pages for each field. (Physics, Math, IT, CS). Which I hope may help you navigate the book better.
+\begin{theorem}
+Let:
+$\forall S \in \mathbb{R}; \quad Baud(MIN) < S < Baud(MAX)$:
+\begin{align*}
+	Freq(S) &= \frac{Hi(S)}{Lo(S)} Weight(x)\\
+	-\frac{Freq(S)}{Weight(S)} &= \frac{Hi(S)}{Lo(S)}
+\end{align*}
+By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the division between the highest signal and lowest signal of $S$.
+\end{theorem}
 
 \nocite{*}
 
 \bibliographystyle{acm}
+\bibliography{Bell_System_Hartley}
 
 \end{document}

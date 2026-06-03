@@ -21,22 +21,13 @@
 \newtheorem{remark}[theorem]{Remark}
 \title{%
 	\vspace{-1.5em}%
-	\large\textbf{An Introduction to Constants}%
+	\large\textbf{Part Nine}%
 }
 
-\author{A. E. Mahrouss\\amlal@nekernel.org}
+\author{A. E. Mahrouss}
 \date{\today}
 
 \begin{document}
-	
-		\maketitle
-\vspace{-0.5em}
-\vspace{0.8em}
-\rule{\linewidth}{0.4pt}
-\vspace{1em}
-	
-	
-	\section{Equations \& Definitions}
 	
 	\begin{definition}
 		We define Euler–Mascheroni constant:
@@ -66,14 +57,14 @@
 	\begin{definition}
 		The following is a series of Euler–Mascheroni constants over $k$:
 		\begin{align*}
-			\sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}.
+			\sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}; \quad qk \neq 0.
 		\end{align*}
 	\end{definition}
 	
 	\begin{definition}
 		The following is a series of $k$ over Euler–Mascheroni constants:
 		\begin{align*}
-			\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}.
+			\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}; \quad k \neq 0.
 		\end{align*}
 	\end{definition}
 	
@@ -140,13 +131,12 @@
 			&= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z};\\
 			\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
 			A'' = \pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)};\\
-			A''' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}.
+			A''' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}; \quad k \neq 0.
 		\end{align*}
 	\end{definition}
 	
 	\nocite{*}
 	
 	\bibliographystyle{acm}
-	\bibliography{S0022314X10001836}
 	
 \end{document}
