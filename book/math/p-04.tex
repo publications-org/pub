@@ -3,7 +3,7 @@
 %% Compatible with: IEEE, ACM, Elsevier, Springer conventions
 %% ============================================================
 
-\documentclass[10pt, twocolumn]{article}
+\documentclass[10pt]{article}
 
 %% ---- Core Packages ----------------------------------------
 \usepackage[T1]{fontenc}
@@ -141,41 +141,31 @@
 \begin{document}
 %% ============================================================
 
-\twocolumn[{%
   \maketitle
   \vspace{-0.5em}
   \vspace{0.8em}
   \rule{\linewidth}{0.4pt}
   \vspace{1em}
-}]
 
 %% ============================================================
 
 \section{Equations \& Theorems}
 
-\begin{theorem}
-	There exists an identity for $P(s)$:
+\begin{definition}
+	There exists an identity of a function $\lambda(x)$:
 	\begin{align*}
-		\pm y + P(s) &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s);\\
-		\pm y &= \frac{\frac{\operatorname{d}}{\operatorname{ds}} P'(s)}{\pm P(s)}; \quad \pm P(s) \neq 0.
+		\pm y \lambda(x) &= \frac{\operatorname{d}}{\operatorname{dx}} \frac{P'(x)}{\pm P(x)}; \quad \pm P(s) \neq 0.
 	\end{align*}
-	Thus:
-	\begin{align*}
-		\pm y &= \frac{\frac{\operatorname{d}}{\operatorname{ds}}  P'(s)}{\pm P(s)}; \quad \pm P(s) \neq 0;\\
-		\pm \frac{y}{P(s)} &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s);\\
-		\pm y &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s) + P(s);\\\\
-		\frac{\operatorname{d}}{\operatorname{ds}} P'(s) + P(s) + P(s) &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s);\\
-		\frac{\operatorname{d}}{\operatorname{ds}} P'(s) + P(s) &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s) - P(s);\\
-		\frac{\operatorname{d}}{\operatorname{ds}} P'(s) &= \frac{\operatorname{d}}{\operatorname{ds}}\frac{ P'(s) - P(s)}{ P(s)};\\
-		\frac{\operatorname{d}}{\operatorname{ds}} P'(s) &= \frac{\operatorname{d}}{\operatorname{ds}} P'(s).
-	\end{align*}
-\end{theorem}
+\end{definition}
 
 \begin{definition}
-	There exists:
+	There exists an equation $\delta$:
 	\begin{align*}
-		\frac{\operatorname{d}}{\operatorname{dx}}f(x) &\leq \frac{g(x) + h(x)}{z(x)};\\
-		z(x) + \frac{\operatorname{d}}{\operatorname{dx}}f(x) &\leq g(x) + h(x).
+		\delta &= \frac{\operatorname{d}}{\operatorname{dx}} \frac{g(x) + h(x)}{\gamma(x)}.
+	\end{align*}
+	Thus, let the following equation:
+	\begin{align*}
+		\frac{\operatorname{d}}{\operatorname{dx}}f(x) + \lambda(x) &= \frac{\operatorname{d}}{\operatorname{dx}} \frac{g(x) + h(x)}{\gamma(x)} \delta; \quad \gamma(x) \neq 0.
 	\end{align*}
 \end{definition}
 

@@ -142,26 +142,28 @@
 \begin{definition}
 	Let a variable $\Delta x$, and assuming a function $\gamma(x)$:
 	\begin{align*}
-	\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.
+	\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.
 	\end{align*}
 	The difference over $y$ would be:
 	\begin{align*}
-		\frac{\Delta x}{y} &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x)}; \quad \gamma(x) \neq 0.
+		\frac{\Delta x}{y} &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)}; \quad \gamma(x) \neq 0.
 	\end{align*}
 	The opposite value of $y$ would be:
 	\begin{align*}
-		\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.\\
-		-y + \Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x)};\\
-	- y &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x) \Delta x}; \quad \gamma(x) \Delta x \neq 0.
+		\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.\\
+		-y + \Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)};\\
+	- y &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x) \Delta x}; \quad \gamma(x) \Delta x \neq 0.
 	\end{align*}
 	Moreover:
 	\begin{align*}
-		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x) \Delta x} &= -y;\\
-		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\Delta x} &= -y \gamma(x);\\
-		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{1} &= -y \gamma(x)\Delta x;\\
-		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))} &= -y \gamma(x)\Delta x;\\
-		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}&= -y \gamma(x)\Delta x \in \mathbb{R}^{+};\\
-		\Delta x &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x) \Delta x} +y = \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\arcsin(x))}}{\gamma(x) \Delta x} \gamma(x)\Delta x; \quad \gamma(x) \neq 0.
+		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x) \Delta x} &= -y;\\
+		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\Delta x} &= -y \gamma(x);\\
+		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))} &= -y \gamma(x)\Delta x;\\
+		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))} &= -y \gamma(x)\Delta x \in \mathbb{R}^{+}.
+	\end{align*}
+	Thus, let the following:
+	\begin{align*}
+		p &= -y \gamma(x)\Delta x + \frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}.
 	\end{align*}
 \end{definition}
 
