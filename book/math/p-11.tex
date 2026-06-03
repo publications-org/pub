@@ -19,39 +19,36 @@
 
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
-
 \title{%
-  \vspace{-1.5em}%
-  \large\textbf{Equations \& Theorems for Mathematics}%
+	\vspace{-1.5em}%
+	\large\textbf{Additional Definitions and Theorems}%
 }
+
 \author{A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 \begin{document}
-
-  \maketitle
-  \vspace{-0.5em}
-  \vspace{0.8em}
-  \rule{\linewidth}{0.4pt}
-  \vspace{1em}
-
-
-\section{Equations \& Definitions}
-
-\begin{theorem}
-	Let the following:
-\begin{equation}
-    \mu(n, p) = \sum_{n}^{p} M(n, p); \quad \mu(n, p) \in \mathbb{D}^{+}
-\end{equation}
-There exists:
-\begin{equation}
-    \mu(n, p) = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+xp)!.
-\end{equation}
-\end{theorem}
-
-\nocite{*}
-
-\bibliographystyle{acm}
-\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
-
+	
+	\maketitle
+	\vspace{-0.5em}
+	\vspace{0.8em}
+	\rule{\linewidth}{0.4pt}
+	\vspace{1em}
+	
+	\section{Theorems \& Definitions}
+	
+	\begin{definition}
+		Let the following:
+		\begin{align*}
+			f'(x)&= \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x};\\
+			f(x) &= \int_{0}^{1} f'(x)dx;\\
+			&= \int_{0}^{1} \frac{\ln (x)^{\mathrm{e}}}{\mathrm{e}} \cdot \mathrm{e}^{x} dx;
+		\end{align*}
+	\end{definition}
+	
+	\nocite{*}
+	
+	\bibliographystyle{acm}
+	\bibliography{A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
+	
 \end{document}

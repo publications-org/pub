@@ -137,20 +137,22 @@
 \rule{\linewidth}{0.4pt}
 \vspace{1em}
 
-\section{Equations \& Theorems}
+\section{Equations \& Definitions}
 
 \begin{definition}
-	Let the following be defined for any domain D:
+	Let the following be defined:
 \begin{align*}
-	x + F(n, p, s, x) &= \frac{\int (\frac{p}{n^{s}}) \text{ } \operatorname{dx}}{\frac{p}{n^{s}}! };\\
-	x (n^{s}!) + F(n, p, s, x)(n^{s}!) &= \frac{ {\int (\frac{p}{n^{s}}) \text{ } \operatorname{dx}}{p!}}{p! (n^{s}!)};\\
-	x (n^{s}!) &= \frac{ {\int (\frac{p}{n^{s}}) \text{ } \operatorname{dx}}{p!}}{p! (n^{s}!)} - F(n, p, s, x)(n^{s}!);\\
-		x (n^{s}!) &= \int (\frac{p}{n^{s}}) \text{ } \operatorname{dx}{p!} - F(n, p, s, x)(n^{s}!) p! (n^{s}!);\\\\
-	x (n^{s}!) -\int (\frac{p}{n^{s}}) \text{ } \operatorname{dx} &= p! - F(n, p, s, x)(n^{s}!) p! (n^{s}!);\\
-	-\int (\frac{p}{n^{s}}) \text{ } \operatorname{dx} &= p! - F(n, p, s, x)(n^{s}!) p! (n^{s}!) - x (n^{s}!);\\
-	-\int (\frac{p}{n^{s}})\text{ } \operatorname{dx} &= p! - F(n, p, s, x)p!(n^{s}!)^{2} - x (n^{s}!);\\
-	-\int (\frac{p}{n^{s}})\text{ } \operatorname{dx} &= - F(n, p, s, x)2p!(n^{s}!)^{2} - x (n^{s}!) \in \mathbb{D}.
+		\tau(n^{s}!) + \lambda(n) &= \phi(n^{s}!) \in \mathbb{D}.		
 \end{align*}
+	Have the following equations:
+	\begin{align*}
+		\lambda(n) &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)};\\
+		\tau(n) &= \frac{\phi(n^{s}!)}{\lambda(n^{s}!)}.
+	\end{align*}
+	Let the following be defined:
+	\begin{align*}
+		\frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!) &= Z'; \quad x \in \mathbb{R}^{+}.
+	\end{align*}
 \end{definition}
 
 \nocite{*}

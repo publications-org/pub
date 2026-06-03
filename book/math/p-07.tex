@@ -137,34 +137,29 @@
 \vspace{0.8em}
 \rule{\linewidth}{0.4pt}
 \vspace{1em}
-\section{Equations, Definitions, \& Theorems}
+\section{Equations \& Definitions}
 
 \begin{definition}
-	Let a variable $\Delta x$, and assuming a function $\gamma(x)$:
+	Let the following:
 	\begin{align*}
-	\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.
+	\Delta x &=	\frac{y}{1} + \gamma(x); \quad \gamma(x) < \Delta x.
 	\end{align*}
-	The difference over $y$ would be:
+\end{definition}
+
+\begin{definition}
+	Let the following:
 	\begin{align*}
-		\frac{\Delta x}{y} &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)}; \quad \gamma(x) \neq 0.
+		A' &= \gamma(x)+\Delta x + \frac{1}{\lambda(x)}; \quad \lambda(x) \neq 0.
 	\end{align*}
-	The opposite value of $y$ would be:
+\end{definition}
+
+\begin{definition}
+	Let the following:
 	\begin{align*}
-		\Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)} + y; \quad \gamma(x) \neq 0.\\
-		-y + \Delta x &=	\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x)};\\
-	- y &= \frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x) \Delta x}; \quad \gamma(x) \Delta x \neq 0.
+		\frac{x}{\lambda(x)} \gamma(x) &= \frac{\Delta x}{y} + Y';\\
+		\frac{x}{\lambda(x)} \gamma(x) - \frac{\Delta x}{y} &= Y'; \quad \Delta x \in \mathbb{D}.
 	\end{align*}
-	Moreover:
-	\begin{align*}
-		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\gamma(x) \Delta x} &= -y;\\
-		\frac{\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}}{\Delta x} &= -y \gamma(x);\\
-		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))} &= -y \gamma(x)\Delta x;\\
-		\frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))} &= -y \gamma(x)\Delta x \in \mathbb{R}^{+}.
-	\end{align*}
-	Thus, let the following:
-	\begin{align*}
-		p &= -y \gamma(x)\Delta x + \frac{\operatorname{d}}{\operatorname{dx}}\frac{1}{\lambda(x))}.
-	\end{align*}
+	For all valid domain $\mathbb{D}$.
 \end{definition}
 
 \nocite{*}

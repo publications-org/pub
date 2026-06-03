@@ -34,19 +34,26 @@
 \vspace{1em}
 
 \section{Equations \& Theorems}
-\begin{theorem}
-    There exists:
-    \begin{align*}
-        \frac{\int (np) \text{ } \operatorname{dp}}{\int (px) \text{ } \operatorname{dx}} &= \frac{p^2n+2C}{px^2+2C} \in \mathbb{D}^{+}.
-    \end{align*}
-    That satisfies:
-    \begin{align*}
-        \int (px) \operatorname{dp} &= \int (np) \operatorname{dx} \frac{p^2n+2C}{px^2+2C};\\\\
-        px^2+2C &= \int (np) \text{ } \operatorname{dp};\\
-        \int (px) \operatorname{dp} &= px^2+2C \frac{p^2n+2C}{px^2+2C};\\
-        \int (px) \operatorname{dp} &= p^2n+2C.
-    \end{align*}
-\end{theorem}
+
+\begin{definition}
+	Let the following:
+	\begin{align*}
+		\int (\lambda + \mu)\sqrt{ax^2 + bx  +c} \operatorname{dx}.
+	\end{align*}
+	We define the three general equations factoring $V'$:
+	\begin{align*}
+		V' &= (\lambda + \mu)\sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c};\\
+		\frac{V'}{(\lambda + \mu)} &= \sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c};\\
+		\sqrt{ax^2 + bx  +c}\frac{V'}{(\lambda + \mu)} &= (\sqrt{ax^2 + bx  +c})^{2}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c}.
+	\end{align*}
+\end{definition}
+\begin{definition}
+	Let the following:
+	\begin{align*}
+		O' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n};\\
+		O' &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}; O' \neq 0.
+	\end{align*}
+\end{definition}
 
 \nocite{*}
 
