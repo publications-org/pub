@@ -109,6 +109,8 @@
   justification=justified
 }
 
+\usepackage{lettrine}
+
 %% ---- Header / Footer --------------------------------------
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -121,7 +123,7 @@
 %% ============================================================
 
 \title{Glossarium Aequationum}
-\author{A. E. Mahrouss}
+\author{A. E. Mahrouss\\amlal@nekernel.org}
 \date{\today}
 
 %% ============================================================
@@ -136,11 +138,12 @@
 \section{Propositum}
 %% ============================================================
 
-Here is a list of mathematical formulas, theorems, and definitions for our further work.\\
-The reason for this is to have a basic tool-kit for the future problem we will tackle on.
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he glossary's purpose is to be provide a reference for definitions, theorems, and equations for the sake of their beauty.\\
+All of this powered by \LaTeX. References are cited at the bottom of the glossary for the sake of credit.
+
 
 %% ============================================================
-\section{Contents and Definitions.}
+\section{On The Contents}
 %% ============================================================
 
 \begin{definition}
@@ -239,7 +242,7 @@ $\forall \mu(n, p)$ There exists:
 	\begin{align*}
 		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7
 	\end{align*}
-	And:
+	And thus applying the same process for products of $(\frac{\ln x}{n} + \frac{n}{\ln x}).$:
 	\begin{align*}
 		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}; \quad m = 7.
 	\end{align*}
@@ -557,6 +560,6 @@ $\forall \mu(n, p)$ There exists:
 \nocite{*}
 
 \bibliographystyle{acm}
-\bibliography{Bell_System_Hartley, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann}
+\bibliography{Bell_System_Hartley, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann, bonito}
 
 \end{document}
