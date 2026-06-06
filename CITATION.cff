@@ -10,16 +10,14 @@ identifiers:
   - type: url
     value: 'https://amlal.nekernel.org'
     description: Amlal's Working Book.
-repository-code: 'https://github.com/amlel-el-mahrouss/book'
+repository-code: 'https://github.com/amlel-el-mahrouss/awb'
 url: 'https://amlal.nekernel.org'
 abstract: >-
-  Working Book of Amlal El Mahrouss.
+  Working Book by Amlal El Mahrouss.
 keywords:
   - cs
-  - systems
-  - os
-  - pl
-  - notebook
+  - it
+  - book
   - physics
   - math
 license: CC-BY-SA-4.0
