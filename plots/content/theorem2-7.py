@@ -1,3 +1,8 @@
+# ============================================================
+# File: theorem2-7.py
+# Description: Numerical evaluation and visualization of Theorem 2.7 from "Glossarium Aequationum" by Amlal El Mahrouss.
+# ============================================================
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import brentq
