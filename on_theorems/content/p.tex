@@ -109,6 +109,8 @@
   justification=justified
 }
 
+\renewcommand{\qedsymbol}{\ensuremath{\blacksquare}}
+
 \usepackage{lettrine}
 
 %% ---- Header / Footer --------------------------------------
@@ -196,9 +198,27 @@ Let us impose some remarks and definitions first.
 	Therefore, by inference there is a following inequality in $\mathbb{C}, \quad \forall n \in \mathbb{R}, \quad n \neq 0.$:
 	\begin{align*}
 		\prod_{m=0}^{n} \cos (-2\pi m) + i \sin (-2\pi m) &\leq n,\\
-		(\prod_{m=0}^{n} \cos (-2\pi m) + i \sin (-2\pi m))^{p} &\leq n^{p}.
+		\prod_{m=0}^{n} \cos (-2\pi m) + i \sin (-2\pi m)^{p} &\leq n^{p}, \quad n \neq 0, \quad p \neq 0, \quad p \in \mathbb{Z}.
 	\end{align*}
 \end{theorem}
+
+\section{Writing a Proof:}
+
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{W}riting a proof involves multiple methods, constructive, chain inference, inference. All of whom shall be used per your theorem' case.\\
+One caveat to add, is to know existing proofs and theorems that may help you bridge towards your proof. As how it happened with Fermat' Last Thoerem.\\
+The following is a structural example of a proof by construction for a variable $I$ in $\mathbb{C}^{+}.$
+
+\begin{proof}
+	Per Theorem N:\\
+	(1) We will construct that for $I$ assuming it is an irrational number in $\mathbb{C}$.\\
+	(2) Therefore. Let $I^{p} \in \mathbb{C}^{+}.$ Observe that for $Z, Y, I \in \mathbb{C}$:
+	\begin{align*}
+		I &= Z+Y+i\pi,\\
+		I-Y &= Y+i\pi.
+	\end{align*}
+	(3) Per $i\pi$ being an irrational and transcendental number, per previous steps, summing $i\pi$ into $I$ and for $p \neq 0$ would then proove by construction $I$ to be an irrational number.
+\end{proof}
+Every step of the proof shall be condtioned per (3), (2). As the importance of closing is really what makes a proof pass or break.
 
 \nocite{*}
 
