@@ -138,20 +138,18 @@
 \newpage
 
 %% ============================================================
-\section{Propositum:}
+\section{Introduction:}
 %% ============================================================
 
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he glossary's purpose is to provide a reference for theorems, definitions, and equations for the purpose of being reusable.\\
-References are cited at the bottom of the glossary where credit is due.\\
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he document's purpose is to provide a reference for theorems, definitions, and equations for the purpose of being reusability. References are cited at the bottom of the glossary where credit is due.\\
 There will be proofs part of another book, adjacent to this one. Where each steps will be explained.\\
 One caveat: $y(x), \lambda(x), \rho(x)$ are defined generically in this book. However the Lean proofs will have a concrete function attributed to them.
 
 %% ============================================================
-\section{On Theorems and Definitions:}
+\section{Definitions:}
 %% ============================================================
 
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{L}et ourselves define the following in rigorous mathematics in a manner that let us reuse them later by subtracting the functions with our own.\\
-The theorems spans from Mathematics to Information Theory. 
+\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}et following theorems, definitions, and remarks, be defined in $\mathbb{R}.$\\The following are defined:
 
 \begin{theorem}
 Let the following:
@@ -191,9 +189,9 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{theorem}
 	Let the following for any $\forall m, n \in \mathbb{R}^{+}.$:
 \begin{equation}
-    \mu(n, p) = \sum_{n}^{p} M(n, p), \quad \mu(n, p) \in \mathbb{D}^{+}
+    \mu(n, p) \coloneq \sum_{n}^{p} M(n, p), \quad \mu(n, p) \in \mathbb{D}^{+}
 \end{equation}
-$\forall \mu(n, p)$ There exists:
+	$\forall \mu(n, p)$ There exists:
 \begin{equation}
     \mu(n, p) = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+xp)!.
 \end{equation}
@@ -202,7 +200,7 @@ $\forall \mu(n, p)$ There exists:
 \begin{theorem}
 	Let a set of rational numbers $\forall x \in \mathbb{R},$ in $\forall \mu(n, p) \in \mathbb{R},$ be in the following inequality:
 	\begin{align*}
-		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p), x \neq 0.
+		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p), \quad x \neq 0.
 	\end{align*}
 \end{theorem}
 
@@ -236,16 +234,15 @@ $\forall \mu(n, p)$ There exists:
 		&= \frac{\ln x}{\Delta y},\\
 		\Delta y &= \ln x,
 	\end{align*}
-	Separately, we find $\forall I, r, x, \Delta x, n \in \mathbb{R}$ that equals:
+	Separately, there exists for $\forall I, r, x, \Delta x, n \in \mathbb{R}$:
 	\begin{align*}
-		I &= r = ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}^{+},\\
-		&= - r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}^{+},
+		I &\coloneq -r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}^{+}.
 	\end{align*}
-	And for all variables of $r$ being equal to each other, e.g: $x =n = \ln x = m.$ Then the following:
+	For all variables of $\forall r \in \mathbb{R}.$ Being equal to each other, e.g: $x = n = \ln x = m.$ Then the following equation:
 	\begin{align*}
 		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}{+}.
 	\end{align*}
-	Admits a transcendental number, if and only if: $r \neq 0, \quad r \in \mathbb{R}$.
+	Admits a transcendental number, If and only If: $r \neq 0, \quad r \in \mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
@@ -559,14 +556,17 @@ $\forall \mu(n, p)$ There exists:
 \end{definition}
 
 \begin{theorem}
-	Let the following identities for $\mathrm{H} \in \mathbb{R}.$:
+	Let the following identitiy in $\mathbb{R}.$:
 	\begin{align*}
-		\frac{ln(\pi^\mathrm{e})!}{\pi} &= (\mathrm{e} \log(\pi))!,\\
-		\mathrm{H} &= \frac{ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathrm{H} \in \mathbb{R}.
+		\frac{ln(\pi^\mathrm{e})!}{\pi} &= (\mathrm{e} \log(\pi))!.
+	\end{align*}
+	And for $\mathrm{H} \in \mathbb{R}.$:
+	\begin{align*}
+		\mathrm{H} &\coloneq \frac{ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathrm{H} \in \mathbb{R}.
 	\end{align*}
 	From the following for $x = \frac{ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$:
 	\begin{align*}
-	\mathrm{H} &= \frac{ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathrm{H} \in \mathbb{R}.
+	\mathrm{H} &\coloneq \frac{ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathrm{H} \in \mathbb{R}.
 	\end{align*}
 	We then would establish another identity $\forall x \in \mathbb{R}.$:
 	\begin{align*}
@@ -581,23 +581,20 @@ $\forall \mu(n, p)$ There exists:
 	\end{equation}
 \end{definition}
 
-\subsection{Final Remarks:}
-
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he nine pages of theorems now comes to an end, stating them here was the first step to then develop a framework later in the 'AWB' book. We will next plot and analyse our results based of our theorems and definitions.
-
-\subsection{Moving Forward:}
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{W}e will now proceed to plot and analyze the following theorems to analyze their convergence and general behavior.
-
-\section{Plotting and Analysis:}
+\section{Final Remarks:}
 \lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he previous section, which establishes 31 definitions and theorems. Will now serve as a basis for plotting.\\
 Which in the next chapter 'On Theorems' will be used to plot some of our theorems. But before, let us impose the following remark in $\mathbb{R}.$:
 
 \begin{remark}
 	Per Theorem 2.31, for $x = \frac{ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$ We have the following:
 	\begin{equation}
-		\frac{ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0.
+		\frac{ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \quad \forall x \in \mathbb{R}.
 	\end{equation}
 \end{remark}
+
+\section{Conclusion:}
+
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{T}he nine pages of theorems now comes to an end, stating them here was the first step to then develop a framework later in the series of papers. We will next plot and analyse our results based of our theorems and definitions. We will now proceed to plot and analyze the following theorems to analyze their convergence and general behavior.
 
 \nocite{*}
 
