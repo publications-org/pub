@@ -13,7 +13,16 @@ Additional content includes:
 * On Distributed Systems.
 * Plots.
 
-Used to explore the concepts further.
+
+
+## Similar Work:
+
+* https://github.com/amlel-el-mahrouss/talks
+* https://github.com/open-cpp-libraries/src
+
+
+
+
 
 ##### Copyright (C) Amlal El Mahrouss 2025-2026, All rights Reserved.
 
