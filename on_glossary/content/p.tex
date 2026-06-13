@@ -161,16 +161,23 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \end{theorem}
 
 \begin{theorem}
-	Let for any $\forall a, \mu, \lambda, b, c \in \mathbb{R}$:
+	Let for any variables $\forall a, \mu, \lambda, b, c \in \mathbb{R}$:
 	\begin{align*}
 		V &= \int (\lambda + \mu)\sqrt{ax^2 + bx  +c} \operatorname{dx}.
 	\end{align*}
-	We define three general equations for $\forall V'$:
+	We define three equations for $\forall V', \operatorname{d}(\lambda + \mu) \in \mathbb{R}.$:
 	\begin{align*}
 		V' &= (\lambda + \mu)\sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c},\\
+	\end{align*}
+	And:
+	\begin{align*}
 		\frac{V'}{(\lambda + \mu)} &= \sqrt{ax^2 + bx  +c}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c},\\
+	\end{align*}
+	And:
+	\begin{align*}
 		\sqrt{ax^2 + bx  +c}\frac{V'}{(\lambda + \mu)} &= (\sqrt{ax^2 + bx  +c})^{2}x \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c}.
 	\end{align*}
+	For a variable $V, \operatorname{d}(\lambda + \mu), \quad V' \in \mathbb{R}.$. 
 \end{theorem}
 
 \begin{theorem}
@@ -179,7 +186,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 		O' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n},\\
 		\frac{O'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}, \quad O' \neq 0.
 	\end{align*}
-	Let $\forall O \in \mathbb{R}$ be:
+	Let $\forall O \in \mathbb{R}$ be defined in $\mathbb{R}.$:
 	\begin{align*}
 		O &= \frac{d}{dx} O', \quad \forall O, O' \in \mathbb{R}, \quad O' \neq 0.
 	\end{align*}
@@ -190,7 +197,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{equation}
     \mu(n, p) \coloneq \sum_{n}^{p} M(n, p), \quad \mu(n, p) \in \mathbb{R}^{+}
 \end{equation}
-	$\forall \mu(n, p)$ There exists:
+	$\forall \mu(n, p)$ There exists such that the following is true to $\forall n, p \in \mathbb{R}^{+}.$:
 \begin{equation}
     \mu(n, p) = p! + \text{ } (n+1p)! + \text{ } (n+2p)! + \text{ } \dots \text{ } + (n+xp)!.
 \end{equation}
@@ -402,20 +409,20 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \end{theorem}
 
 \begin{definition}
-	We define the Golden-ratio constant:
+	We define the Golden ratio constant $\phi$ as:
 	\begin{align*}
 		\phi &= \frac{1+\sqrt{5}}{2}, \forall \phi \in \mathbb{R}.
 	\end{align*}
-	And the Supergolden-ratio constant:
+	And the Supergolden-ratio constant $\psi$ as:
 	\begin{align*}
 		\psi &= \frac{1+\frac{29+3\sqrt{93}}{2}+\frac{29+3\sqrt{93}}{2}}{3}, \forall \psi \in \mathbb{R}.
 	\end{align*}
-	And the Kepler-Bouwkamp constant:
+	And the Kepler-Bouwkamp constant $\mathrm{K}$ as:
 	\begin{align*}
 		\mathrm{K} &= \prod_{n=3}^{\pi} \cos(\frac{\pi}{n}),\\
 		&= \cos(\frac{\pi}{n-1}) \cos(\frac{\pi}{n}) \dots, \forall K \in \mathbb{R}.
 	\end{align*}
-	And. For an equation of the previous result per Theorem 2.19:
+	And. For an equation of the previous result per Theorem 2.19, we can define the following:
 	\begin{align*}
 		\mathrm{A} &= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z},\\
 		\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\

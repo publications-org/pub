@@ -3,5 +3,5 @@
 -- Purpose: Generate HTML and PDF papers from LaTex documents.
 -- (C) 2026 Amlal El Mahrouss.
 
-variable {p : Prop}
-variable {q : Prop}
+def x : Nat := 1/12
+def y : Nat := 3/6
