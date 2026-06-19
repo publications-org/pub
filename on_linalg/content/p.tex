@@ -126,7 +126,7 @@ urlcolor=blue!60!black
 
 \title{%
 	\vspace{-1.5em}%
-	\large\textbf{A Short Reference for Linear Algebra.}%
+	\large\textbf{An In-Between Proof Before Algebraic Concepts.}%
 }
 \author{By A. E. Mahrouss}
 \date{\today}
@@ -139,29 +139,49 @@ urlcolor=blue!60!black
 \tableofcontents
 \newpage
 
-\begin{center}
-A wise man, once said that for $\frac{\zeta(3)}{\pi}$ in $\mathbb{R}$.:
+\section{Introduction:}
+
+\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}et the following theorems, proof, and definitions:
+
+\begin{theorem}
+For all $\forall \epsilon \in \mathbb{R}$ that for $\frac{\zeta(3)}{\pi}$ in $\mathbb{R}$.:
 \begin{align*}
 	\forall \epsilon \coloneq \frac{\zeta(3)}{\pi},\\
 	\exists \pi^{1/12} > \epsilon, \forall \epsilon \neq 0, \forall \epsilon \in \mathbb{R}.
 \end{align*}
-There exists the following equation in $\mathbb{R}.$:
+\end{theorem}
+\begin{proof}
+Let the following in $\mathbb{R}$ by induction.:\\(1) By the property of $\pi^{1/12}$ being transcendental, by the previously stated inequality in $\mathbb{R}.$:
 \begin{align*}
-	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi} ) - \pi &= 0,
+		\exists \pi^{1/12} > \epsilon, \forall \epsilon \neq 0, \forall \epsilon \in \mathbb{R}, \quad \epsilon \coloneq \frac{\zeta(3)}{\pi}.
+\end{align*}
+\end{proof}
+\begin{theorem}
+There exists the following equation in $\mathbb{R}.$ And $\forall a, a, k \in \mathbb{R}$:
+\begin{align*}
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) - \pi &= 0,
 \end{align*}
 Then moving the left-hand-side $\pi$ to a right-hand-side $\pm \pi$.:
 \begin{align*}
-	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi} ) &= \pm \pi.
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) &= \pm \pi.
 \end{align*}
-Amlal El Mahrouss, 2026.
-\end{center}
+\end{theorem}
+\begin{proof}
+Let the following in $\mathbb{R}$ by construction.:\\(1) The formula $\pi^{1/12} - \frac{\zeta(3)}{\pi}$ divided on both sides, yields the following identity:
+\begin{align*}
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k}  &= \pm \frac{\pi}{(\pi^{1/12} - \frac{\zeta(3)}{\pi})}.
+\end{align*}\\
+(2) By induction, the previous identity becomes, which then both the denominator cancels:
+\begin{align*}
+	\pm \frac{\pi}{(\pi^{1/12} - \frac{\zeta(3)}{\pi})} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) &= \pm \pi.
+\end{align*}
+(3) Which therefore simplifies to the following identity:
+\begin{align*}
+	\pm \pi &= \pm \pi.
+\end{align*}
+\end{proof}
 
-%% ============================================================
-\section{Introduction:}
-%% ============================================================
-
-\lettrine[lines=2, lhang=0.1, loversize=0.2]{W}e assure first that the reader is already familar with algebraic concepts, such as periods, vectors, eigenvalues, rational, algebraic, irrational numbers. Going forward, each non-trivial statement will have a hand-written and proof written in Rocq.
-	
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{O}ur next chapter will be covering algebraic properties.
 \nocite{*}
 \bibliographystyle{acm}
 
