@@ -1,6 +1,6 @@
 -- File: InductionSample.lean
 -- Author: Amlal El Mahrouss
--- Purpose: Generate HTML and PDF papers from LaTex documents.
+-- Purpose: Induction proof sample in Lean.
 -- (C) 2026 Amlal El Mahrouss.
 
 def x : Nat := 1/12
