@@ -1,0 +1,190 @@
+% AUTHOR: Amlal El Mahrouss
+% PURPOSE: An In-Between Proof Before Algebraic Concepts.
+
+\documentclass[10pt]{article}
+
+%% ---- Core Packages ----------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%% ---- Page Geometry ----------------------------------------
+\usepackage[
+top=1in, bottom=1in,
+left=0.75in, right=0.75in,
+columnsep=0.25in
+]{geometry}
+
+%% ---- Mathematics ------------------------------------------
+\usepackage{amsmath, amssymb, amsthm, amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{textcomp}
+\usepackage{esint}
+
+%% ---- Figures & Tables -------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+%% ---- Code Listings ----------------------------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\lstdefinestyle{codestyle}{
+	backgroundcolor=\color{gray!8},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	commentstyle=\color{green!50!black},
+	keywordstyle=\color{blue}\bfseries,
+	stringstyle=\color{orange!70!black},
+	numberstyle=\tiny\color{gray},
+	numbers=left,
+	numbersep=5pt,
+	showstringspaces=false,
+	frame=single,
+	rulecolor=\color{gray!40},
+	tabsize=2
+}
+\lstset{style=codestyle}
+
+%% ---- Hyperlinks -------------------------------------------
+\usepackage[
+colorlinks=true,
+linkcolor=blue!70!black,
+citecolor=green!50!black,
+urlcolor=blue!60!black
+]{hyperref}
+\usepackage{url}
+
+%% ---- Bibliography -----------------------------------------
+\usepackage[numbers, sort&compress]{natbib}
+
+%% ---- Miscellaneous ----------------------------------------
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{cleveref}
+
+%% ---- Theorem Environments ---------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+%% ---- Custom Commands --------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+
+%% ---- Caption Formatting -----------------------------------
+\captionsetup{
+	font=small,
+	labelfont=bf,
+	format=hang,
+	justification=justified
+}
+
+\renewcommand{\qedsymbol}{\ensuremath{\blacksquare}}
+
+\usepackage{lettrine}
+
+%% ---- Header / Footer --------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% ============================================================
+%%  FRONT MATTER
+%% ============================================================
+
+\title{%
+	\vspace{-1.5em}%
+	\large\textbf{An In-Between Proof Before Algebraic Concepts.}%
+}
+\author{By A. E. Mahrouss}
+\date{\today}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction:}
+
+\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}et the following theorems, proof, and definitions:
+
+\begin{theorem}
+For all $\forall \epsilon \in \mathbb{R}$ that for $\frac{\zeta(3)}{\pi}$ in $\mathbb{R}$.:
+\begin{align*}
+	\forall \epsilon \coloneq \frac{\zeta(3)}{\pi},\\
+	\exists \pi^{1/12} > \epsilon, \forall \epsilon \neq 0, \forall \epsilon \in \mathbb{R}.
+\end{align*}
+\end{theorem}
+\begin{proof}
+Let the following in $\mathbb{R}$ by induction.:\\(1) By the property of $\pi^{1/12}$ being transcendental, by the previously stated inequality in $\mathbb{R}.$:
+\begin{align*}
+		\exists \pi^{1/12} > \epsilon, \forall \epsilon \neq 0, \forall \epsilon \in \mathbb{R}, \quad \epsilon \coloneq \frac{\zeta(3)}{\pi}.
+\end{align*}
+\end{proof}
+\begin{theorem}
+There exists the following equation in $\mathbb{R}.$ And $\forall a, a, k \in \mathbb{R}$:
+\begin{align*}
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) - \pi &= 0,
+\end{align*}
+Then moving the left-hand-side $\pi$ to a right-hand-side $\pm \pi$.:
+\begin{align*}
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) &= \pm \pi.
+\end{align*}
+\end{theorem}
+\begin{proof}
+Let the following in $\mathbb{R}$ by construction.:\\(1) The formula $\pi^{1/12} - \frac{\zeta(3)}{\pi}$ divided on both sides, yields the following identity:
+\begin{align*}
+	\sum_{k=1}^{\pi} \frac{\gamma(a, qk)}{k}  &= \pm \frac{\pi}{(\pi^{1/12} - \frac{\zeta(3)}{\pi})}.
+\end{align*}\\
+(2) By induction, the previous identity becomes, which then both the denominator cancels:
+\begin{align*}
+	\pm \frac{\pi}{(\pi^{1/12} - \frac{\zeta(3)}{\pi})} + (\pi^{1/12} - \frac{\zeta(3)}{\pi}) &= \pm \pi.
+\end{align*}
+(3) Which therefore simplifies to the following identity:
+\begin{align*}
+	\pm \pi &= \pm \pi.
+\end{align*}
+\end{proof}
+
+\lettrine[lines=2, lhang=0.1, loversize=0.2]{O}ur next chapter will be covering algebraic properties.
+\nocite{*}
+\bibliographystyle{acm}
+
+%% ============================================================
+\end{document}
+%% ============================================================
