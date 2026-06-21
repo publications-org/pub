@@ -1,5 +1,9 @@
 # Amlal's Papers (AP)
 
+## Purpose:
+
+The sources of Amlal El Mahrouss's papers, written in LaTeX (proofs included)
+
 ## Contents:
 
 The repository is currently organized as stated below:
