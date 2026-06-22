@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: Amlal's Papers.
 message: Amlal's Papers.
-type: book
+type: software
 authors:
   - given-names: Amlal
     family-names: El Mahrouss
