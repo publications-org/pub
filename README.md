@@ -1,6 +1,6 @@
-# Publications at: amlal.nekernel.org
+# Publications at: amlal.nekernel.org.
 
-The TeX sources of Amlal El Mahrouss's papers. Citations and proofs included.
+The TeX sources of Amlal El Mahrouss's papers, citations and proofs included.
 
 ## Contents:
 
@@ -14,9 +14,10 @@ The repository is currently organized as stated below:
 * On Distributed Systems.
 * On Plots.
 
-## Similar Works:
+## Similar Work:
 
-* https://github.com/amlal-nekernel-org/talks
+* https://github.com/publications-org/talks
+* https://github.com/publications-org/snippets
 * https://github.com/open-cpp-libraries/src
 
 ## How to access the documents:
