@@ -5,15 +5,16 @@
 
 PDFTEX ?= pdflatex
 HTMLTEX ?= htlatex
+RM := rm -rf
 ECHO := @echo
 
 .PHONY: all
 all: clean
-	ECHO "Cleanup is done."
+	ECHO "[SRC] Cleanup is done."
 
 .PHONY: clean
 clean:
-	@rm -rf *.4ct *.4tc *.aux *.css *.pdf *.html *.tmp *.dvi *.idv *.lg *.log *.xref *.out *.png
+	RM *.4ct *.4tc *.aux *.css *.pdf *.html *.tmp *.dvi *.idv *.lg *.log *.xref *.out *.png
 
 include p1.mk
 include p2.mk
