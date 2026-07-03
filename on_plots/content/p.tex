@@ -139,6 +139,46 @@ urlcolor=blue!60!black
 \tableofcontents
 \newpage
 
+\section{Abstract:}
+
+\lettrine[lines=1, lhang=0.1, loversize=0.2]{T}HIS document will serve to dress several plots, and study their behavior, and cases.
+
+\section{Introduction:}
+
+\begin{definition}
+	We define the following identity in $\mathbb{C}.$:
+	\begin{align*}
+		\ln(-1)&=\ln(e^{i \cdot \pi}), \quad i \in \mathbb{C}.
+	\end{align*}
+	Let us define the Lambert W function, named after Jean-Heri-Lambert, for $x \in \mathbb{C}.$ Such that:
+	\begin{align*}
+		\exists W(z) \in \mathbb{C},\\
+		f(z) = w \cdot e^{w}, \quad f(z) &= W(z).
+	\end{align*}
+\end{definition}
+
+\begin{corollary}
+	Let us define a following relation for $z, z' \in \mathbb{C},$ that states:
+	\begin{align*}
+		W(z') &= W(z), \quad z', z \in \mathbb{C}.
+	\end{align*}
+\end{corollary}
+
+\begin{proof}
+	Per Corollary 2.2, $\ln(-1)=\ln(e^{i \cdot \pi})$ can be expressed by construction in the form of:
+	\begin{equation}
+		W(\ln(-1)) = W(\ln(e^{i \cdot \pi}))
+	\end{equation}
+	(1) By the following identity of $\ln(-1)=\ln(e^{i \cdot \pi})$ and $-1 = e^{i \cdot \pi}.$\\
+	(2) And that the identity of $\ln(-1) = \pi \cdot i$, by construction yields the identity $\ln(-1) = \ln(e^{i \cdot \pi}).$\\
+	(3) Thus proving by construction the following identity for $e^{i \cdot \pi}$.
+\end{proof}
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{corlesslambert, lang2013complex}
+
 %% ============================================================
 \end{document}
 %% ============================================================
