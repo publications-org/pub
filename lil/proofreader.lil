@@ -1,0 +1,4 @@
+(* Little Lisp Proof Reader System *)
+
+(require 'model)
+
