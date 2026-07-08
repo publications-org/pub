@@ -3,5 +3,5 @@
 -- Purpose: Induction proof sample in Lean.
 -- (C) 2026 Amlal El Mahrouss.
 
-def x : Nat := 1/12
-def y : Nat := 3/6
+-- Simple induction proof in Lean using simple tactics.
+-- Gonna use a numerical set for that matter.
