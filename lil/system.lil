@@ -1,0 +1,7 @@
+(* Little Lisp System *)
+
+(require 'model)
+(require 'reader)
+(require 'proofreader)
+
+((((model init) set_params) 10bn) run_loop)

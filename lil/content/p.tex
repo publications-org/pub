@@ -141,21 +141,36 @@ urlcolor=blue!60!black
 
 \section{Synopsis:}
 
-\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following notes on Little Learner's example formulas:
+\lettrine[lines=1, lhang=0.1, loversize=0.2]{L}ET the following notes on Little Learner's state the tactic on its training. LiL adopts a dynamic approach to training. Letting it be able to unlearn and relearn missing or wrong concepts.
 
-\subsection{Training LiL:}
+\subsection{Training and feeding LiL:}
+
+One may train LiL using the following theorem:
 
 \begin{theorem}
 Let the following variables in $\mathbb{R}$ be defined as follows:
 \begin{align*}
-    \mathcal{L} &= \sum_{k=1}^{\infty} \mathcal{T}_k \otimes \mathcal{Y}_k + C_k.
+    \mathcal{X} &= \sum_{k=1}^{\infty} \mathcal{T}_k \otimes \mathcal{Y}_k + C_k.
 \end{align*}
-Where $C_k$ is a constant term in $\mathbb{R}$.
+Where $C_k$ is a constant term in $\mathbb{R}$. Where $\mathcal{X}$ is a sum of tensor products of $\mathcal{T}_k$ and $\mathcal{Y}_k$ for $k=1,2,\ldots$.
 \end{theorem}
 
 \begin{remark}
-    $\mathcal{L}$ shall be non-zero and non-negative, as it is a sum of positive terms in $\mathbb{R}$.
+    $\mathcal{L}$ shall be non-zero and non-negative, as it is a sum of positive terms in $\mathbb{R}$.\\
+	Inserting the theorem to LiL' training tree alongside an hash-value pair. One may be able to query for the theorem.
 \end{remark}
+
+\begin{remark}
+	Another example of a definition this time, would be a Taylor Series for $f(x) \in \mathbb{R}$ and $a \in \mathbb{R}$, which states:
+	\begin{align*}
+		\mathcal{T}(x) &= \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n.
+	\end{align*}
+	For $\mathcal{T}(x)$ representing the Taylor Series expansion of $f(x)$ about the point $a$.
+\end{remark}
+
+\section{Going Forward:}
+
+Next we will observe and study several tactics we can consider for LiL's Input/Output training.
 
 \nocite{*}
 

@@ -125,5 +125,6 @@ if root_p is not None:
     print(f"  Prod form root x* = {root_p:.6f}   P(x*)={rhs_product(np.array([root_p]))[0]:.6f}")
 
 plt.savefig("theorem2-7.png", dpi=150, bbox_inches="tight")
+
 print("Plot saved to theorem2-7.png")
-plt.show()
+
