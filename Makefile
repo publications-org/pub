@@ -7,3 +7,6 @@
 .PHONY: on_alg
 on_alg:
 	latex.exe on_alg/content/p.tex
+
+
+
