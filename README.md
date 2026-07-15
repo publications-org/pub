@@ -4,7 +4,7 @@
 
 By Amlal El Mahrouss (A. E. Mahrouss)
 
-The TeX sources of Amlal El Mahrouss's papers, citations and proofs included.
+The TeX sources of Amlal El Mahrouss's papers and notes, citations and proofs included. This repository contains research output and al. Credit is expected when using the work.
 
 ## Contents:
 
