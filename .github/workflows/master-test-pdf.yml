@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build CI Pub
-      run: make -f Makefile
+    - name: Build CI Pub - Test
+      run: make all
 
