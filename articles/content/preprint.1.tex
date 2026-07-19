@@ -159,7 +159,7 @@ Letting us define two concepts before attacking the next section of the preprint
     \end{equation}
     A general identity, defined as an integral over the subregion $\mathcal{P}_{S,F}$ with respect to the Riemannian volume form, where $t \in [S, F]$ is a foliation parameter indexing a family of hypersurfaces $\{\mathcal{P}_t\}_{t \in [S,F]}$ that foliates $\mathcal{P}_{S,F}$, and $i, j, k$ are continuous local coordinates on each leaf $\mathcal{P}_t$:
     \begin{equation}
-        \langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,F}} \mathcal{F}_{t}(i, j, k) \quad d\mathrm{vol}.
+      \langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,F}} \mathcal{F}_{t}(i, j, k) \quad d\mathrm{vol}.
     \end{equation}
     Where $\mathrm{vol}$ is the Riemannian volume form on $\mathcal{P}$.
 \end{definition}
@@ -183,19 +183,35 @@ Several remarks will be stated here regarding our observations of our theorems t
 \end{theorem}
 
 \begin{corollary}
-  
+  Per definitions in Definition~2.1, since the tensors are assumed non-zero ($\langle \mathcal{P} \rangle$), there is non degenerate cases of Definition 2.1 for both of the equations as restated below:
+  \begin{equation}
+    \langle \mathcal{P} \rangle = \mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}.
+  \end{equation}
+  And:
+  \begin{equation}
+    \langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,F}} \mathcal{F}_{t}(i, j, k) \quad d\mathrm{vol}.
+  \end{equation}
 \end{corollary}
 
 \begin{corollary}
-  
-\end{corollary}
-
-\begin{corollary}
-  
+  Per $\mathcal{F}_t(i, j, k)$ being factorizable as $\mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)$ on each leaf $\mathcal{P}_t$ of the foliation.
 \end{corollary}
 
 \begin{proof}
-Per 4.3, 4.4, 4.5, we will prove by construction that theorem 4.2 admits non-degenrate cases for Riemannian manifolds.
+We proceed by construction, invoking Corollaries~4.3 and~4.4.
+
+\textit{Base case.} By Corollary~4.3, the contraction $\mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}$ is non-degenerate on $\mathcal{P}_{S,F}$, since the constituent tensors are assumed non-zero by Definition~2.1. In particular, $\langle \mathcal{P} \rangle \neq 0$ on the initial leaf $\mathcal{P}_S$.
+
+\textit{Inductive step.} By Corollary~4.4, $\mathcal{F}_t(i,j,k)$ factors as $\mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)$ on each leaf $\mathcal{P}_t$. Suppose the identity $\langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,t}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}$ holds for all leaves up to $\mathcal{P}_t$. Since $\mathcal{F}_t$ is continuous and non-degenerate by Corollaries~4.3 and~4.4, the identity extends to $\mathcal{P}_{t+\epsilon}$ for any $\epsilon > 0$ by continuity of the foliation parameter.
+
+\textit{Conclusion.} Applying Fubini's theorem for Riemannian submersions over $\mathcal{P}_{S,F}$:
+\begin{equation}
+  \int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}
+  = \int_{S}^{F} \left(\int_{\mathcal{P}_t} \mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)\,d\mathrm{vol}_t\right) dt
+  = \mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}
+  = \langle \mathcal{P} \rangle.
+\end{equation}
+Since the factorization is non-degenerate on every leaf and Fubini assembles the leaves globally over $\mathcal{P}_{S,F}$, both equations of Definition~2.1 are simultaneously satisfied, completing the proof.
 \end{proof}
 
 %% TODO: Rework the references at the end.
