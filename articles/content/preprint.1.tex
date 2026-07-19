@@ -195,20 +195,17 @@ Several remarks will be stated here regarding our observations of our theorems t
 \end{corollary}
 
 \begin{proof}
-We proceed by construction, invoking Corollaries~4.3 and~4.4.
-
-\textit{Base case.} By Corollary~4.3, the contraction $\mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}$ is non-degenerate on $\mathcal{P}_{S,F}$, since the constituent tensors are assumed non-zero by Definition~2.1. In particular, $\langle \mathcal{P} \rangle \neq 0$ on the initial leaf $\mathcal{P}_S$.
-
-\textit{Inductive step.} By Corollary~4.4, $\mathcal{F}_t(i,j,k)$ factors as $\mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)$ on each leaf $\mathcal{P}_t$. Suppose the identity $\langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,t}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}$ holds for all leaves up to $\mathcal{P}_t$. Since $\mathcal{F}_t$ is continuous and non-degenerate by Corollaries~4.3 and~4.4, the identity extends to $\mathcal{P}_{t+\epsilon}$ for any $\epsilon > 0$ by continuity of the foliation parameter.
-
-\textit{Conclusion.} Applying Fubini's theorem for Riemannian submersions over $\mathcal{P}_{S,F}$:
+We proceed by construction, invoking Corollaries~4.3 and~4.4.\\
+(1) By Corollary~4.3, the contraction $\mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}$ is non-degenerate on $\mathcal{P}_{S,F}$, since the constituent tensors are assumed non-zero by Definition~2.1. In particular, $\langle \mathcal{P} \rangle \neq 0$ on the initial leaf $\mathcal{P}_S$.\\
+(2) By Corollary~4.4, $\mathcal{F}_t(i,j,k)$ factors as $\mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)$ on each leaf $\mathcal{P}_t$. Suppose the identity $\langle \mathcal{P} \rangle = \int_{\mathcal{P}_{S,t}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}$ holds for all leaves up to $\mathcal{P}_t$. Since $\mathcal{F}_t$ is continuous and non-degenerate by Corollaries~4.3 and~4.4, the identity extends to $\mathcal{P}_{t+\epsilon}$ for any $\epsilon > 0$ by continuity of the foliation parameter.\\
+(3) Applying Fubini's theorem for Riemannian submersions over $\mathcal{P}_{S,F}$:
 \begin{equation}
   \int_{\mathcal{P}_{S,F}} \mathcal{F}_t(i,j,k)\,d\mathrm{vol}
   = \int_{S}^{F} \left(\int_{\mathcal{P}_t} \mathcal{T}_i(t) \cdot \mathcal{P}_{ij}(t) \cdot \mathcal{P}_{ijk}(t)\,d\mathrm{vol}_t\right) dt
   = \mathcal{T}_i \cdot \mathcal{P}_{ij} \cdot \mathcal{P}_{ijk}
   = \langle \mathcal{P} \rangle.
 \end{equation}
-Since the factorization is non-degenerate on every leaf and Fubini assembles the leaves globally over $\mathcal{P}_{S,F}$, both equations of Definition~2.1 are simultaneously satisfied, completing the proof.
+(4) Since the factorization is non-degenerate on every leaf and Fubini assembles the leaves globally over $\mathcal{P}_{S,F}$, both equations of Definition~2.1 are simultaneously satisfied, completing the proof.
 \end{proof}
 
 %% TODO: Rework the references at the end.
