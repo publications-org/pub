@@ -16,4 +16,4 @@ jobs:
     - name: Build CI Pub - Install LaTeX (TexLive)
       run: sudo apt install texlive texlive-latex-extra texlive-science texlive-latex-recommended
     - name: Build CI Pub - Test Lean Install (Test)
-      run: sudo curl https://elan.lean-lang.org/elan-init.sh -sSf | sh && lean
+      run: sudo curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -y && lean
