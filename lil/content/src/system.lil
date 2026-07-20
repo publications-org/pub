@@ -1,4 +1,4 @@
-(* Little Lisp System *)
+(* Little Learner Lisp System *)
 
 (require 'model)
 (require 'reader)
