@@ -1,0 +1,4 @@
+Ideas:
+- AMLAL: Can we find by contradiction using P_k P_phi and P_x here? Assuming that P_k/P_phi = P_x and     
+  then realizing that they don't have rational natural roots?
+- AMLAL: First find P_x and then sandwich the inequality
