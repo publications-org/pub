@@ -152,18 +152,18 @@ One caveat: $y(x), \lambda(x), \rho(x)$ are defined generically in this note.\\H
 
 \begin{theorem}
 Let the following:
-$\forall S \in \mathbb{R}, \quad Baud(MIN) < Freq(S) < Baud(MAX).$ Where $Baud(MIN)$ is the minimal baud rate and $Baud(MAX)$ the maximal baud rate:
+$\forall S \in \mathbb{R}, \, Baud(MIN) < Freq(S) < Baud(MAX).$ Where $Baud(MIN)$ is the minimal baud rate and $Baud(MAX)$ the maximal baud rate:
 \begin{align*}
 	Freq(S) &= \frac{Hi(S)}{Lo(S)} Weight(x),\\
 	-\frac{Freq(S)}{Weight(S)} &= \frac{Hi(S)}{Lo(S)}.
 \end{align*}
-By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the division between the highest signal and lowest signal of $S$.
+Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the division between the highest signal and lowest signal of $S$.
 \end{theorem}
 
 \begin{theorem}
 	Let for any variables of the expression $\forall a, \mu, \lambda, b, c \in \mathbb{R}$ define:
 	\begin{align*}
-		\mathcal{V} &= \int (\lambda + \mu) \cdot \sqrt{ax^2 + bx + c} \quad dx.
+		\mathcal{V} &= \int (\lambda + \mu) \cdot \sqrt{ax^2 + bx + c} \, dx.
 	\end{align*}
 	We define three equations for $\forall \mathcal{V}', \operatorname{d}(\lambda + \mu) \in \mathbb{R}.$:
 	\begin{align*}
@@ -173,7 +173,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\begin{align*}
 		\pm \frac{\mathcal{V}'}{(\lambda + \mu)} &= \sqrt{ax^2 + bx + c}x \cdot  \int x \operatorname{d}(\lambda + \mu)\sqrt{ax^2 + bx  +c}.
 	\end{align*}
-	For a variable $\mathcal{V}, \operatorname{d}(\lambda + \mu), \quad \mathcal{V}' \in \mathbb{R}.$
+	For a variable $\mathcal{V}, \operatorname{d}(\lambda + \mu), \, \mathcal{V}' \in \mathbb{R}.$
 \end{theorem}
 
 \begin{remark}
@@ -183,11 +183,11 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{corollary}
 	Per Theorem 2.2, we have the following:
 	\begin{align*}
-		\mathcal{V} &= \int (\lambda + \mu)\sqrt{ax^2 + bx + c} \quad dx.
+		\mathcal{V} &= \int (\lambda + \mu)\sqrt{ax^2 + bx + c} \, dx.
 	\end{align*}
 	One way to rewrite theorem 2.2, is $\forall a, \mu, \lambda, b, c \in \mathbb{R}$.:
 	\begin{align*}
-		\frac{\mathcal{V}}{(\lambda + \mu)} &= \int \sqrt{ax^2 + bx + c} \quad dx.
+		\frac{\mathcal{V}}{(\lambda + \mu)} &= \int \sqrt{ax^2 + bx + c} \, dx.
 	\end{align*}
 	In order to obtain a ratio from the integral of roots.
 \end{corollary}
@@ -196,18 +196,18 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	Thus let the following per Theorem 2.2:
 	\begin{align*}
 		\mathcal{O}' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n},\\
-		\frac{\mathcal{O}'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}, \quad \mathcal{O}' \neq 0.
+		\frac{\mathcal{O}'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}, \, \mathcal{O}' \neq 0.
 	\end{align*}
 	Let $\forall \mathcal{O} \in \mathbb{R}$ be defined in $\mathbb{R}.$:
 	\begin{align*}
-		\mathcal{O} &= \frac{d}{dx} \mathcal{O}', \quad \forall \mathcal{O}, \mathcal{O}' \in \mathbb{R}, \quad \mathcal{O}' \neq 0.
+		\mathcal{O} &= \frac{d}{dx} \mathcal{O}', \, \forall \mathcal{O}, \mathcal{O}' \in \mathbb{R}, \, \mathcal{O}' \neq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
 	Let the following for any $\forall m, n \in \mathbb{R}^{+}.$:
 \begin{equation}
-    \mu(n, p) \coloneq \sum_{n}^{p} M(n, p), \quad \mu(n, p) \in \mathbb{R}^{+}
+    \mu(n, p) \coloneq \sum_{n}^{p} M(n, p), \, \mu(n, p) \in \mathbb{R}^{+}
 \end{equation}
 	$\forall \mu(n, p)$ There exists such that the following is true to $\forall n, p \in \mathbb{R}^{+}.$:
 \begin{equation}
@@ -218,20 +218,20 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{theorem}
 	Let a set of rational numbers $\forall x \in \mathbb{R},$ in $\forall \mu(n, p) \in \mathbb{R},$ be in the following inequality:
 	\begin{align*}
-		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p), \quad x \neq 0.
+		\frac{2\pi}{\mu(m, p)} < x < \mu(n, p), \, x \neq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
 	Let for any real $\forall x \in \mathbb{R}.$ If: $x \neq 0.$ Then:
 	\begin{align*}
-		\mathcal{E}(x) &= \frac{\gamma(x)}{\delta(x) + \lambda(x)}, \quad \mathcal{E}(x) \in \mathbb{R}, \quad \gamma(x) \neq 0.
+		\mathcal{E}(x) &= \frac{\gamma(x)}{\delta(x) + \lambda(x)}, \, \mathcal{E}(x) \in \mathbb{R}, \, \gamma(x) \neq 0.
 	\end{align*}
 	Therefore, based on the definition $\mathcal{E}(x)$ in $\mathbb{R}.$:
 	\begin{align*}
 		\mathcal{P} &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \mathcal{E}(x) dx,\\
 		\mathcal{P} &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx,\\
-		\mathcal{P} &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}, \quad \mathcal{P}(x) \neq 0.
+		\mathcal{P} &= \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx + x^{n} \rho(x)^{3}, \, \mathcal{P}(x) \neq 0.
 	\end{align*}
 	Separately, let the following for $\forall x, n \in \mathbb{R}$:
 	\begin{align*}
@@ -239,13 +239,13 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\end{align*}
 	There exists a solution in $\forall s = \mathcal{P}' \in \mathbb{R},$ of the following:
 	\begin{align*}
-		\mathcal{P}' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx, \quad \mathcal{P}' \neq 0.
+		\mathcal{P}' &= \prod_{n=1}^{3}\rho(x) x^{n} + \int \frac{\gamma(x)}{\delta(x) + \lambda(x)} dx, \, \mathcal{P}' \neq 0.
 	\end{align*}
 	Separately, let the following $\forall x, \mathcal{L} \in \mathbb{R}.$:
 	\begin{align*}
 		\mathcal{L} + \lambda(x)^{2} &= \frac{\gamma(x)}{\delta(x)},\\
 	 	\mathcal{L} + \lambda(x) &= \frac{\gamma(x)}{\delta(x)  \lambda(x) },\\
-	 	\mathcal{L} &= \frac{\gamma(x)}{\delta(x) \cdot \lambda(x) } - \lambda(x), \quad (\delta(x) \cdot \lambda(x)) \neq 0.
+	 	\mathcal{L} &= \frac{\gamma(x)}{\delta(x) \cdot \lambda(x) } - \lambda(x), \, (\delta(x) \cdot \lambda(x)) \neq 0.
 	\end{align*}
 	Where the value of $\forall \Delta y \in \mathbb{R}$ equals:
 	\begin{align*}
@@ -254,30 +254,30 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\end{align*}
 	Separately, there exists for $\forall I, r, x, \Delta x, n \in \mathbb{R}$:
 	\begin{align*}
-		I &\coloneq -r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}^{+}.
+		I &\coloneq -r + ( \frac{\ln x}{\Delta n} + \frac{\Delta n}{\ln x})^m, \, r \neq 0, \, r \in \mathbb{R}^{+}.
 	\end{align*}
 	For all variables of $\forall r \in \mathbb{R}.$ Being equal to each other, e.g: $x = n = \ln x = m.$ Then the following equation:
 	\begin{align*}
-		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m, \quad r \neq 0, \quad r \in \mathbb{R}{+}.
+		r &= ( \frac{\ln x}{n} + \frac{n}{\ln x})^m, \, r \neq 0, \, r \in \mathbb{R}{+}.
 	\end{align*}
-	Admits a transcendental number, If and only If: $r \neq 0, \quad r \in \mathbb{R}$.
+	Admits a transcendental number, If and only If: $r \neq 0, \, r \in \mathbb{R}$.
 \end{theorem}
 
 \begin{theorem}
 	Let the following plots both a real and imiginary part for both. If: $x, n \in \mathbb{R}.$ Then:
 	\begin{align*}
-		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7, \quad \log n \neq \log 1.
+		\frac{7}{\log n} + \frac{363 \log 7}{140} &= \sum_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \, m = 7, \, \log n \neq \log 1.
 	\end{align*}
 	And thus by computing the products of $(\frac{\ln x}{n} + \frac{n}{\ln x}).$:
 	\begin{align*}
-		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \quad m = 7, \quad \log n \neq \log 1.
+		\frac{7}{\log n} + \frac{\log^{7} 7}{5040} &= \prod_{n=1}^{m} \frac{\ln x}{n} + \frac{n}{\ln x}, \, m = 7, \, \log n \neq \log 1.
 	\end{align*}
 \end{theorem}
 
 \begin{theorem}
 	Let us define the following equations for $\forall n \in \mathbb{R}^{+}$:
 	\begin{align*}
-		Z &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!), \quad Z \in \mathbb{Z}.
+		Z &= \frac{\phi(n^{s}!)}{\tau(n^{s}!)} + \frac{\phi(n^{s}!)}{\lambda(n^{s}!)} + \phi(n^{s}!), \, Z \in \mathbb{Z}.
 	\end{align*}
 	That admits the following alternate form:
 	\begin{align*}
@@ -287,7 +287,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\end{align*}
 	Alternatively, we can assume another equation:
 	\begin{align*}
-		\phi(s, n) &= \frac{(s-3)}{\tau(n^{s}!)} + \frac{(s-2)}{\lambda(n^{s}!)} + \frac{(s-1)}{f'(n^{s}!)} + s, \quad s \neq 0.
+		\phi(s, n) &= \frac{(s-3)}{\tau(n^{s}!)} + \frac{(s-2)}{\lambda(n^{s}!)} + \frac{(s-1)}{f'(n^{s}!)} + s, \, s \neq 0.
 	\end{align*}
 	Assuming $\phi(s, n) \neq 0.$ And $\phi(s, n) \in \mathbb{R}.$
 \end{theorem}
@@ -310,17 +310,17 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{definition}
 	Let us define the following for $\forall \Delta x, x, y \in \mathbb{R}$:
 	\begin{align*}
-	\Delta x &=	y + \gamma(x), \quad \gamma(x) < \Delta x.
+	\Delta x &=	y + \gamma(x), \, \gamma(x) < \Delta x.
 	\end{align*}
   	Separately, we have the following for $x \in \mathbb{R}$:
 	\begin{align*}
-		\mathrm{A} &= \gamma(x)+\Delta x + \frac{1}{\lambda(x)}, \quad \lambda(x) \neq 0.
+		\mathrm{A} &= \gamma(x)+\Delta x + \frac{1}{\lambda(x)}, \, \lambda(x) \neq 0.
 	\end{align*}
   Separately, we have the following  for $\forall x, y \in \mathbb{R}$:
 	\begin{align*}
 		\frac{x}{\lambda(x)} + \gamma(x) &= \frac{x}{y} + \mathrm{Y'},\\
-		\frac{x}{\lambda(x)} + \gamma(x) - \frac{x}{y} &= \mathrm{Y'}, \quad \Delta x \in \mathbb{R},\\
-		\lambda(x) + \gamma(x) -\frac{x}{y} &= \frac{\mathrm{Y'}}{x}, \quad x \neq 0.
+		\frac{x}{\lambda(x)} + \gamma(x) - \frac{x}{y} &= \mathrm{Y'}, \, \Delta x \in \mathbb{R},\\
+		\lambda(x) + \gamma(x) -\frac{x}{y} &= \frac{\mathrm{Y'}}{x}, \, x \neq 0.
 	\end{align*}
 	For all valid numbers in the domains of '$\mathbb{R}$'.
 \end{definition}
@@ -365,34 +365,34 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{theorem}
 	The following is a series of Euler–Mascheroni constants over $k$:
 	\begin{align*}
-		\sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \quad qk \neq 0.
+		\sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \, qk \neq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{definition}
 	The following is a series of $k$ over Euler–Mascheroni constants:
 	\begin{align*}
-		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \quad k \neq 0.
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \, k \neq 0.
 	\end{align*}
 \end{definition}
 
 \begin{definition}
 	The following inequality may also be defined:
 	\begin{align*}
-		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \quad x \neq 0.
+		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} < x < \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \, x \neq 0.
 	\end{align*}
 \end{definition}
 
 \begin{definition}
 	Applying the previous theorem laid out on previous papers. We satisfy the following:
 	\begin{align*}
-		y &= \pm z \frac{b}{c!}, \quad \pm z \in \mathbb{R}^{+}\\
-		\frac{y}{\pm z} &= c!, \quad \pm z \neq 0\\
+		y &= \pm z \frac{b}{c!}, \, \pm z \in \mathbb{R}^{+}\\
+		\frac{y}{\pm z} &= c!, \, \pm z \neq 0\\
 		-c! &= \pm \frac{y}{\pm z}.
 	\end{align*}
 	For any domain $\mathbb{R}^{+}$. Where the following is a Taylor Series of:
 	\begin{equation}
-		z = \frac{x^n}{n!}, \quad n \neq 0.
+		z = \frac{x^n}{n!}, \, n \neq 0.
 	\end{equation}
 \end{definition}
 
@@ -416,7 +416,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	Then for: x = $\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}, \forall x \in \mathbb{R}.$:
 	\begin{align*}
 		\pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
-		\frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}, \quad \pm z \neq 0.
+		\frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z} &= \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty} \frac{k}{\gamma(a, qk)}}{\pm z}, \, \pm z \neq 0.
 	\end{align*}
 \end{theorem}
 
@@ -439,7 +439,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 		\mathrm{A} &= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z},\\
 		\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
 		\mathrm{A}' = \pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
-		\mathrm{A}'' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \quad k \neq 0, \quad \forall \mathrm{A} \in \mathbb{R}.
+		\mathrm{A}'' = \pm z^{2} - \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)} &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \, k \neq 0, \, \forall \mathrm{A} \in \mathbb{R}.
 	\end{align*}
 \end{definition}
 
@@ -468,7 +468,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 		\mathrm{B} &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2},\\
 		&= \frac{\frac{\frac{n - 1}{2} - 4}{2} - \frac{n - 1}{2}}{2(\sqrt{2} + 1)}.
 	\end{align*}
-	Then. Substituting $\frac{n - 1}{2}=\phi, \quad \forall \phi \in \mathbb{R}.$:
+	Then. Substituting $\frac{n - 1}{2}=\phi, \, \forall \phi \in \mathbb{R}.$:
 	\begin{align*}
 		\mathrm{C} &= 2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} - \phi,\\
 		&= \frac{\frac{\phi - 4}{2} - \phi}{2(\sqrt{2} + 1)},\\
@@ -501,7 +501,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\begin{align*}
 		2(\sqrt{2} + 1) + \frac{\frac{n - 1}{2} - 4}{2} &= x,
 	\end{align*}
-	Thus for the following variable $n=5, \quad \forall n \in \mathbb{N}^{+}.$:
+	Thus for the following variable $n=5, \, \forall n \in \mathbb{N}^{+}.$:
 	\begin{align*}
 		2(\sqrt{2} + 1) + \frac{5}{2} &= x,\\
 		\sqrt{2}+2 + \frac{5}{2} &= x.
@@ -541,7 +541,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{theorem}
 	Let the following definite integral for $\forall x, y, \pm D \in \mathbb{R}.$:
 	\begin{align*}
-		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= \pm D, \quad \pm D \neq 0.
+		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} dx &= \pm D, \, \pm D \neq 0.
 	\end{align*}
 	With a definite integral that admits a solution of:
 	\begin{align*}
@@ -557,18 +557,18 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{theorem}
 	Let the following equation for $\forall x, y, n, C \in \mathbb{R}.$:
 	\begin{align*}
-		\pm \frac{\gamma(x-y)}{|x - y|^{n}}! &= \pm \frac{\sum_{n=1}^{p}\gamma(x-y)}{\sum_{n=1}^{p}|x - y|^{n}} + C, \quad x \neq y, \quad y \neq 0, \quad x \neq 0.
+		\pm \frac{\gamma(x-y)}{|x - y|^{n}}! &= \pm \frac{\sum_{n=1}^{p}\gamma(x-y)}{\sum_{n=1}^{p}|x - y|^{n}} + C, \, x \neq y, \, y \neq 0, \, x \neq 0.
 	\end{align*}
 \end{theorem}
 
 \begin{definition}
-	Let the transform for $N \neq 0, \quad N \in \mathbb{N}.$ Be the following:
+	Let the transform for $N \neq 0, \, N \in \mathbb{N}.$ Be the following:
 	\begin{align*}
-		X_k &= \sum_{m=0}^{N-1} x_{m}\mathrm{e}^{-i2\pi \frac{km}{N}n}, \quad k = 0,\dots,N-1.
+		X_k &= \sum_{m=0}^{N-1} x_{m}\mathrm{e}^{-i2\pi \frac{km}{N}n}, \, k = 0,\dots,N-1.
 	\end{align*}
-	The inverse notation for $n \neq 0, N \neq 0, \quad N \in \mathbb{N}.$ Is given by:
+	The inverse notation for $n \neq 0, N \neq 0, \, N \in \mathbb{N}.$ Is given by:
 	\begin{align*}
-		x_k &= \frac{1}{N} \sum_{m=0}^{N-1} X_k \mathrm{e}^{i2\pi \frac{km}{N}n}, \quad k = 0,\dots,N-1.
+		x_k &= \frac{1}{N} \sum_{m=0}^{N-1} X_k \mathrm{e}^{i2\pi \frac{km}{N}n}, \, k = 0,\dots,N-1.
 	\end{align*}
 	For $x_{0}, \dots, x_{n-1}$ be complex numbers. Where $\mathrm{e}^{-i2\pi /n}$ is a primitive nth root of 1.
 \end{definition}
@@ -580,15 +580,15 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 	\end{align*}
 	And for $\mathcal{H} \in \mathbb{R}.$:
 	\begin{align*}
-		\mathcal{H} &\coloneq \frac{\ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathcal{H} \in \mathbb{R}.
+		\mathcal{H} &\coloneq \frac{\ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \, \forall \mathcal{H} \in \mathbb{R}.
 	\end{align*}
-	From the following for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$:
+	From the following for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \, \forall x \in \mathbb{R}.$:
 	\begin{align*}
-	\mathcal{H} &\coloneq \frac{\ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \quad \forall \mathcal{H} \in \mathbb{R}.
+	\mathcal{H} &\coloneq \frac{\ln(\pi^\mathrm{e})!}{\pi} + \frac{(\mathrm{e} \log(\pi))!}{\pi}, \, \forall \mathcal{H} \in \mathbb{R}.
 	\end{align*}
 	We then would establish another identity $\forall x \in \mathbb{R}.$:
 	\begin{align*}
-		x &= -\frac{(\log(\pi)!) (e \log(\pi))!}{\pi}, \quad x \neq 0.
+		x &= -\frac{(\log(\pi)!) (e \log(\pi))!}{\pi}, \, x \neq 0.
 	\end{align*}
 \end{theorem}
 \begin{remark}
@@ -598,7 +598,7 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 \begin{definition}
 	Defining the Chvátal–Sankoff constants for $\gamma_k, n, k \in \mathbb{R}.$:
 	\begin{equation}
-		\gamma_k = \lim_{n \to \infty} \frac{\mathrm{\mathcal{E}}{\lambda_{n, k}}}{n}, \quad n \neq 0.
+		\gamma_k = \lim_{n \to \infty} \frac{\mathrm{\mathcal{E}}{\lambda_{n, k}}}{n}, \, n \neq 0.
 	\end{equation}
 \end{definition}
 
@@ -607,16 +607,16 @@ By Hartley's Law, the weight of $S$ over its frequency $F$, may be equal of the 
 Which in the next chapter 'On Theorems' will be used to plot some of our theorems. But before, let us impose the following remark in $\mathbb{R}.$:
 
 \begin{remark}
-	Per Theorem 2.31, for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \quad \forall x \in \mathbb{R}.$ We have the following:
+	Per Theorem 2.31, for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \, \forall x \in \mathbb{R}.$ We have the following:
 	\begin{equation}
-		\frac{\ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \quad \forall x \in \mathbb{R}.
+		\frac{\ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \, \forall x \in \mathbb{R}.
 	\end{equation}
 \end{remark}
 
 \begin{corollary}
 	Per Remark 3.1 for each value of x, there exists such identities:
 	\begin{align*}
-		\frac{\ln(\pi^\mathrm{e})!}{\pi} &= \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \quad \forall x \in \mathbb{R}.
+		\frac{\ln(\pi^\mathrm{e})!}{\pi} &= \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \, \forall x \in \mathbb{R}.
 	\end{align*}
 	Defined in $\mathbb{R}.$ And for $x \in \mathbb{R}.$
 \end{corollary}
@@ -624,7 +624,7 @@ Which in the next chapter 'On Theorems' will be used to plot some of our theorem
 \begin{corollary}
 	For each index $n$ in a numerical sequence $x, p, n \in \mathbb{R},$ it is defined as the following:
 	\begin{align*}
-		x_n &= \frac{p}{n+1}, \quad n \neq 0.
+		x_n &= \frac{p}{n+1}, \, n \neq 0.
 	\end{align*}
 	There exists by the property of parity if and only if $n+1 = 2p + 1$, then the sequence contains  odd indices.
 \end{corollary}
@@ -640,7 +640,7 @@ Which in the next chapter 'On Theorems' will be used to plot some of our theorem
 \begin{definition}
 	Let us define a double integral for $\forall x, y \in \mathbb{R}$ with a function $f(x, y)$ over a domain $D$ in a xy-plane:
 	\begin{align*}
-		\mathcal{I}_n &= \iint_{D} f(x, y) \otimes \mathcal{Z}_n \quad dx.dy, \quad x, y, f(x, y) \in \mathbb{R}.
+		\mathcal{I}_n &= \iint_{D} f(x, y) \otimes \mathcal{Z}_n \, dx.dy, \, x, y, f(x, y) \in \mathbb{R}.
 	\end{align*}
 	Where $\mathcal{I}_n$ is a double integral of the function $f(x, y)$ over the domain $D$ in the xy-plane.
 \end{definition}
