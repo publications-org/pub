@@ -146,9 +146,9 @@ urlcolor=blue!60!black
 \begin{theorem}
 There exist an equation in a domain $\mathbb{D}$ from a non-zero $x, y, t \in \mathbb{R}$.:
 \begin{align*}
-    \mathcal{C} &= \mathcal{N}(x) - y \cdot \int_{n}^{p} \mathcal{T}_{n} \cdot t \, dt,\\
-    \mathcal{C} - \mathcal{N}(x) &= -y \cdot \int_{n}^{p} \mathcal{T}_{n} \cdot t \, dt,\\
-    \mathcal{C} \pm \frac{\mathcal{N}(x)}{y} &= \int_{n}^{p} \mathcal{T}_{n} \cdot t \, dt, \, t \in \mathbb{R}.
+    \mathcal{C} &= \mathcal{N}(x) - y \cdot \int_{n}^{p} \mathcal{T}_{n} \cdot t \, \partial t,\\
+    \mathcal{C} - \mathcal{N}(x) &= -y \cdot \int_{n}^{p} \mathcal{T}_{n} \cdot t \, \partial t,\\
+    \mathcal{C} \pm \frac{\mathcal{N}(x)}{y} &= \int_{n}^{p} \mathcal{T}_{n} \cdot t \, \partial t, \, t \in \mathbb{R}.
 \end{align*}
 That yields the identity for an integral of tensors $\mathcal{T}_n$, that would converge for $p \neq \pm \infty$,\\ and yield a non-zero value.
 \end{theorem}
@@ -160,7 +160,7 @@ There exist a ratio $\forall x, y \in \mathbb{R}$, $\forall p \in \mathbb{N}$:
 \end{align*}
 Consider the set of derivatives of $t_p$ below written as the following for $y_p \neq 0$ and $y_p! \neq 0$.:
 \begin{align*}
-	\mathcal{S} &= \frac{dt_p}{dx} \cdot \frac{\Delta x_p}{y_p!}, \, \dots
+	\mathcal{S} &= \frac{\partial t_p}{\partial x} \cdot \frac{\Delta x_p}{y_p!}, \, \dots
 \end{align*}
 \end{remark}
 
@@ -171,7 +171,7 @@ Going forward on this note, we shall note the following observations for our fut
 \begin{definition}
 	Let us have the definition of a normal, there exists $z$, and $\forall z, x, y \in \mathbb{R}$ and that there exists $\forall i, j, k \in \mathbb{R}$.
 	\begin{equation}
-		\mathcal{C} + ||z|| = \frac{\partial \, x}{\partial \, y} \mathcal{X}_{ijk} \cdot x.
+		\mathcal{C} + ||z|| = \frac{\partial \, x}{\partial \, y} \cdot \mathcal{X}_{ijk} \cdot x.
 	\end{equation}
 	There exist a normal that cancels at $z=\pi$ equating to $\frac{\partial \, x}{\partial \, y} \mathcal{X}_{ijk} \cdot x$ which when integrated is ought to be less than $||\frac{z}{x}||$. $\mathcal{C}$ is to be considered a complementary variable in $\mathbb{R}$.
 \end{definition}
