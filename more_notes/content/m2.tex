@@ -126,7 +126,7 @@ urlcolor=blue!60!black
 
 \title{%
 	\vspace{-1.5em}%
-	\large\textbf{Little Learner Reference Formulas.}%
+	\large\textbf{Additional Write-up for Future problems.}%
 }
 \author{By Amlal El Mahrouss}
 \date{\today}
@@ -140,8 +140,37 @@ urlcolor=blue!60!black
 \newpage
 
 %% ============================================================
-\section{Synopsis:}
+\section{A List of Theorems and Proofs:}
 %% ============================================================
+
+Below have been stated theorems and their attached proofs with optionally included remarks and corollaries. 
+
+\begin{theorem}
+\label{theo:1}
+There exist thee differential equation of a variable $t \in \mathbb{R}$ and function $F \in \mathbb{R}$.\\
+Yields for a set analytical solutions of n-dimensions:
+\begin{equation}
+	\mathcal{M}_{t} + F(t) = \frac{\partial t}{\partial F''(t)} \cdot F'(t), \, t \neq 0.
+\end{equation}
+Where $\mathcal{M}_{t}$ is a tensor of index $t$ in a sequence of tensors $\mathcal{M}$ in a domain of tensors $\mathbb{D}$.
+\end{theorem}
+\begin{proof}
+\label{pro:1}
+Per Thoerem~\ref{theo:1}, there exist a proof of construction of a continuous set of solutions for $F \in \mathbb{R}$.\\
+(i) There exist the following per \ref{theo:1}:
+\begin{equation}
+	\mathcal{M}_{t} + F(t) = \frac{\partial t}{\partial F''(t)} \cdot F'(t), \, t \neq 0.
+\end{equation}
+(ii) Assuming that $\mathcal{M}_t$ is always continuous in the specific n dimension of $F$, we assume $F(t)$ is thus continuous.\\
+(iii) Thus if $F$ is continuous, then $F$'s derivatives to an nth degree are continuous.\\
+(iv) Thus per (i), (ii), (iii), this completes the proof.
+\end{proof}
+\begin{remark}
+Proof~\ref{pro:1} holds for non-degenerate cases of $t$ and $\mathcal{M}_{t}$.
+\end{remark}
+\begin{remark}
+Proof~\ref{pro:1} holds for non-degenerate cases of $F'$ and $F''$, if and only if $F$ is non-degenerate.
+\end{remark}
 
 %% ============================================================
 \end{document}
