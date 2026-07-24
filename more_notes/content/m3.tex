@@ -1,5 +1,5 @@
 % AUTHOR: Amlal El Mahrouss
-% PURPOSE: M2.
+% PURPOSE: M3.
 
 \documentclass[10pt]{article}
 
@@ -126,7 +126,7 @@ urlcolor=blue!60!black
 
 \title{%
 	\vspace{-1.5em}%
-	\large\textbf{Additional Write-up for Future Problems.}%
+	\large\textbf{Second Additional Write-up for Future Problems.}%
 }
 \author{By Amlal El Mahrouss}
 \date{\today}
@@ -143,76 +143,25 @@ urlcolor=blue!60!black
 \section{List of Theorems and Proofs:}
 %% ============================================================
 
-Below is several theorems and their attached proofs with optionally included remarks and corollaries.
+%% ============================================================
+\subsection{Several Lemmas and Theorems:}
+%% ============================================================
 
-\subsection{Several Theorems, Proofs, and Remarks:}
-
-\begin{theorem}
-\label{theo:1}
-There exist thee differential equation of a variable $t \in \mathbb{R}$ and function $F \in \mathbb{R}$.\\
-Yields for a set analytical solutions of n-dimensions:
+\begin{lemma}
+\label{lem:1}
+There exist a following identity of factor $p$ of an index of a set $\mathcal{I}$ at $k$ in $\mathbb{R}$.
 \begin{equation}
-	\mathcal{M}_{t} + F(t) = \frac{\partial t}{\partial F''(t)} \cdot F'(t), \, t \neq 0.
+	||\mathcal{E}||^{p} = p \cdot \mathcal{I}_{k}.
 \end{equation}
-Where $\mathcal{M}_{t}$ is a tensor of index $t$ in a sequence of tensors $\mathcal{M}$ in a domain of tensors $\mathbb{D}$.
-\end{theorem}
-\begin{proof}
-\label{pro:1}
-Per Thoerem~\ref{theo:1}, there exist a proof of construction of a continuous set of solutions for $F \in \mathbb{R}$.\\
-(i) There exist the following per \ref{theo:1}:
-\begin{equation}
-	\mathcal{M}_{t} + F(t) = \frac{\partial t}{\partial F''(t)} \cdot F'(t), \, t \neq 0.
-\end{equation}
-(ii) Assuming that $\mathcal{M}_t$ is always continuous in the specific n dimension of $F$, we assume $F(t)$ is thus continuous.\\
-(iii) Thus if $F$ is continuous, then $F$'s derivatives to an nth degree are continuous.\\
-(iv) Thus per (i), (ii), (iii), this completes the proof.
-\end{proof}
+The following equation holds for $\mathcal{E} \neq 0 \land p \neq 0.$
+\end{lemma}
 \begin{remark}
-Proof~\ref{pro:1} holds for non-degenerate cases of $t$ and $\mathcal{M}_{t}$.
-\end{remark}
-\begin{remark}
-Proof~\ref{pro:1} holds for non-degenerate cases of $F'$ and $F''$, if and only if $F$ is non-degenerate.
+Per Lemma~\ref{lem:1} There exist a specific nonlinear graph of $\mathcal{E}$, if and only if $p < 0$.
 \end{remark}
 
-\subsection{Several Definitions:}
-
-Let the several definitions in \ref{def:1}, \ref{def:2} be Partial Differential Equations of parameters $x$ and $y$ in $\mathbb{R}$, and \ref{def:3} be a three diemensional homotopy in $\mathcal{X}$.
-
-\begin{definition}
-\label{def:1}
-Let the following inverse PDE defined in $\mathbb{R}$ with a variable limit named $\mathcal{N} \in \mathbb{N}$.
-\begin{equation}
-	\mathcal{F}(x, y)^{-1} = \frac{\partial^p x}{ \partial y^p} - \prod_{n=1}^{\mathcal{N}} \frac{\partial^n x}{ \partial y^n}. 
-\end{equation}
-Where $F$ does not converge when $x=0$ and $x=y$.
-\end{definition}
-
-\begin{definition}
-\label{def:2}
-Let the following PDE defined in $\mathbb{R}$ with a variable limit named $\mathcal{N} \in \mathbb{N}$.
-\begin{equation}
-	\mathcal{F}(x, y) = \frac{\partial^p x}{ \partial y^p} + \prod_{n=1}^{\mathcal{N}} \frac{\partial^n x}{ \partial y^n}. 
-\end{equation}
-Where $F$ does not converge when $x=0$ and $x=y$.
-\end{definition}
-
-\begin{definition}
-\label{def:3}
-Let the following topological space in $\mathcal{X}$.
-\begin{equation}
-	\mathcal{H}(x, y, t) : [p, n, t] \times [x, y, t] \to \mathcal{X}.
-\end{equation}
-Where both variables $p, n$ satifies the following predicates: $p=x$ and $y=n$.
-\end{definition}
-
-\begin{remark}
-\label{rem:3.1}
-	Let $\mathcal{X}$ be a three dimensional topological space with an homotopy $\mathcal{H}(x, y, t)$.
-\end{remark}
-
-\nocite{*}
-\bibliographystyle{acm}
-\bibliography{weil1967basic, pinter2010book, S0022314X10001836, Fatou1906, A_Course_of_Pure_Mathematics, General_Theory_Dirichlet_Series, Riemann, bonito2026, hardy1922theory, chambadal1981dictionnaire}
+%% ============================================================
+\section{Conclusion:}
+%% ============================================================
 
 %% ============================================================
 \end{document}
