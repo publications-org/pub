@@ -6,11 +6,11 @@
 ## Synopsis:
 
 These are the LaTeX sources of Amlal El Mahrouss's papers, pre-prints, notes, and bib resources are included.
-This repository contains research output and al. Credit is expected when using the work.
+This repository contains research output et al. Credit is expected when using the work.
 
 ## Similar Work:
 
-* https://github.com/publications-org/talks
+* https://github.com/publications-org/talk
 * https://github.com/publications-org/snippets
 * https://github.com/open-cpp-libraries/src
 * https://github.com/ne-app-eu/src
