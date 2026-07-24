@@ -2,7 +2,7 @@
 
 ## To be used for curl -fsSL https://install.amlal.nekernel.org | sh
 
-echo "==> NE.APP: DOWNLOADING PUBLICATIONS..."
+echo "==> PUB: DOWNLOADING REPOSITORY..."
 
 ORG=publications-org
 PROFILE=pub-release
