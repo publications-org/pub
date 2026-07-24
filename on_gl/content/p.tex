@@ -151,7 +151,7 @@ One caveat: $y(x), \lambda(x), \rho(x)$ are defined generically in this note.\\H
 \lettrine[lines=1, lhang=0.1, loversize=0.2]{P}ER the following observations, let the following theorems, definitions, and remarks, be defined in $\mathbb{R}.$\\The following are defined:
 
 \begin{theorem}
-Let the following:
+Let the following in $\mathbb{R}.$:
 $\forall S \in \mathbb{R}, \, Baud(MIN) < Freq(S) < Baud(MAX).$ Where $Baud(MIN)$ is the minimal baud rate and $Baud(MAX)$ the maximal baud rate:
 \begin{align*}
 	Freq(S) &= \frac{Hi(S)}{Lo(S)} Weight(x),\\
@@ -161,10 +161,11 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 \end{theorem}
 
 \begin{remark}
-	There exist degenerate cases for 2.1, per the weight $S$ over $F$. Where $S$ is greater than $F$.
+	There exist degenerate cases per 2.1, per the weight $S$ over $F$. Where $S$ is greater than $F$.
 \end{remark}
 
 \begin{theorem}
+\label{theo:expr-int}
 	Let for any variables of the expression $\forall a, \mu, \lambda, b, c \in \mathbb{R}$ define:
 	\begin{align*}
 		\mathcal{V} &= \int (\lambda + \mu) \cdot \sqrt{ax^2 + bx + c} \, dx.
@@ -181,11 +182,11 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 \end{theorem}
 
 \begin{remark}
-	Per Theorem 2.2, $\lambda$ shall be non-zero in $\mathbb{R}.$
+	Per Theorem~\ref{theo:expr-int}, $\lambda$ shall be non-zero in $\mathbb{R}.$
 \end{remark}
 
 \begin{corollary}
-	Per Theorem 2.2, we have the following:
+	Per Theorem~\ref{theo:expr-int}, we have the following:
 	\begin{align*}
 		\mathcal{V} &= \int (\lambda + \mu)\sqrt{ax^2 + bx + c} \, dx.
 	\end{align*}
@@ -197,7 +198,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 \end{corollary}
 
 \begin{theorem}
-	Thus let the following per Theorem 2.2:
+	Thus let the following per Theorem~\ref{theo:expr-int}:
 	\begin{align*}
 		\mathcal{O}' + (\lambda + \mu + x)^{n-2} &= (\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n},\\
 		\frac{\mathcal{O}'}{(\lambda + \mu + x)^{n-2}} &= \frac{(\lambda + \mu + x)^{n-1} + (\lambda + \mu + x)^{n}}{(\lambda + \mu + x)^{n-2}}, \, \mathcal{O}' \neq 0.
@@ -374,6 +375,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 \end{theorem}
 
 \begin{definition}
+	\label{theo:2.19}
 	The following is a series of $k$ over Euler–Mascheroni constants:
 	\begin{align*}
 		\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k}, \, k \neq 0.
@@ -438,7 +440,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 		\mathrm{K} &= \prod_{n=3}^{\infty} \cos(\frac{\pi}{n}),\\
 		&= \cos(\frac{\pi}{n-1}) \cos(\frac{\pi}{n}) \dots, \forall K \in \mathbb{R}.
 	\end{align*}
-	And. For an equation of the previous result per Theorem 2.19, we can define the following:
+	And. For an equation of the previous result per Theorem~\ref{theo:2.19}, we can define the following:
 	\begin{align*}
 		\mathrm{A} &= \pm z + \frac{\sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)}}{\pm z},\\
 		\pm z^2 &= \sum_{k=1}^{\infty} \frac{\gamma(a, qk)}{k} + \sum_{k=1}^{\infty}\frac{k}{\gamma(a, qk)},\\
@@ -543,6 +545,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 \end{theorem}
 
 \begin{theorem}
+	\label{theo:2.31}
 	Let the following definite integral for $\forall x, y, \pm D \in \mathbb{R}.$:
 	\begin{align*}
 		\int_{C}^{\pi} \frac{ \ln |x| \cdot f(y)f'(x) }{x^{n}y!} \, dx &= \pm D, \, \pm D \neq 0.
@@ -596,7 +599,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 	\end{align*}
 \end{theorem}
 \begin{remark}
-	The previous identity of Theorem 2.31 will be later used, bear it in mind.
+	The previous identity of Theorem~\ref{theo:2.31} will be later used, bear it in mind.
 \end{remark}
 
 \begin{definition}
@@ -611,7 +614,7 @@ Per Hartley's law, the weight of $S$ over its frequency $F$, may be equal of the
 Which in the next chapter 'On Theorems' will be used to plot some of our theorems. But before, let us impose the following remark in $\mathbb{R}.$:
 
 \begin{remark}
-	Per Theorem 2.31, for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \, \forall x \in \mathbb{R}.$ We have the following:
+	Per Theorem~\ref{theo:2.31}, for $x = \frac{\ln(\pi^\mathrm{e})!}{\pi}, \, \forall x \in \mathbb{R}.$ We have the following:
 	\begin{equation}
 		\frac{\ln(\pi^\mathrm{e})!}{\pi} = \frac{(\mathrm{e} \log(\pi))!}{\pi}, x \neq 0, \, \forall x \in \mathbb{R}.
 	\end{equation}

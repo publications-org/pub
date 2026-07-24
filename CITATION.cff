@@ -10,10 +10,10 @@ identifiers:
   - type: url
     value: 'https://amlal.nekernel.org'
     description: Amlal El Mahrouss's Papers.
-repository-code: 'https://github.com/publications-org/papers'
+repository-code: 'https://github.com/publications-org/pub'
 url: 'https://amlal.nekernel.org'
 abstract: >-
-  Working Papers/Notes by Amlal El Mahrouss.
+  Amlal El Mahrouss's papers and al. From amlal.nekernel.org.
 keywords:
   - cs
   - physics
