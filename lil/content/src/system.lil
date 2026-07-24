@@ -6,4 +6,5 @@
 
 (require 'input)
 
-((((model init) set_params) "10bn") run_loop)
+((((model init) set_params) "10bn"))
+(model load_personality "mainframe")
